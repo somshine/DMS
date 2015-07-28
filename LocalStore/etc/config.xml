@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Som_LocalStore>
+            <!--
+            this is the version number our module is currently at. in order
+            for setup scripts to run, their version number must be less than 
+            or equal to this value.
+            
+            as we add upgrade scripts, we increment this value. The next time
+            your Magento instance is accessed, Magento will compare values in
+            DB table 'core_resource' against this value. If the DB is lower, 
+            it will attempt to run any setup scripts for the module and then 
+            update the database table to match this value.
+            -->
+            <version>0.0.1</version>
+        </Som_LocalStore>
+    </modules>
+    <global>
+        
+        <!-- 
+        add an adminhtml block definition 
+        -->
+        <blocks>
+            <som_localstore_adminhtml>
+               <class>Som_LocalStore_Block_Adminhtml</class>
+            </som_localstore_adminhtml>
+        </blocks>
+        
+        <!-- 
+        add a helper definition for use in adminhtml.xml menu translation 
+        -->
+        <helpers>
+            <som_localstore>
+                <class>Som_LocalStore_Helper</class>
+            </som_localstore>
+        </helpers>
+        
+        <models>
+            
+            <!-- 
+            this is the Model alias referred to in install-0.0.1.php 
+            -->
+            <som_localstore>
+                <!-- 
+                this tells Magento where to find Models for this module 
+                -->
+                <class>Som_LocalStore_Model</class>
+                
+                <!-- 
+                this tells Magento where to find Resource 
+                materials for this module 
+                -->
+								<resourceModel>som_localstore_resource</resourceModel>
+                
+            </som_localstore>
+            
+            <!-- 
+            this alias must match the above <resourceModel/> value 
+            -->
+            <som_localstore_resource>
+                <class>Som_LocalStore_Model_Resource</class>
+            </som_localstore_resource>
+            
+        </models>
+        
+        <resources>
+            
+            <!-- 
+            this must match our folder name under the module sql folder 
+            -->
+            <som_localstore_setup>
+							<setup>
+									<module>Som_LocalStore</module>
+							</setup>
+                
+                <!--
+                this is only relevant if you have multiple DB connections 
+                -->
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+                
+            </som_localstore_setup>
+            
+        </resources>
+        
+    </global>
+    
+    <!-- add a router for access to our admin panel controller -->
+    <admin>
+        <routers>
+            
+            <!-- this is the alias for this router -->
+            <som_localstore_admin>
+                
+                <!-- 
+                basically inform Magento to use
+                admin scope for requests to this router 
+                -->
+                <use>admin</use>
+                
+                <args>
+                    <!--
+                    this tells Magento where to find 
+                    adminhtml controllers for this module 
+                    -->
+                   <module>Som_LocalStore_Adminhtml</module>
+                    
+                    <!-- this is the term used in the actual URL -->
+                    <frontName>local_sale</frontName>
+                </args>
+            </som_localstore_admin>
+            
+        </routers>
+    </admin>
+    
+</config>

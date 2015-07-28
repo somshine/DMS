@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<config>
+    <!-- we are defining a new admin panel menu item -->
+    <menu>
+        
+        <!--
+        first create a top level menu item which will appear alongside CMS
+        -->
+        <som_localstore translate="title"
+                module="som_localstore">
+            <title>Local Store</title>
+            <sort_order>75</sort_order>
+            <depends>
+                <module>Som_LocalStore</module>
+            </depends>
+            
+            <!-- under this top level menu create a child menu item -->
+            <children>
+                <sale translate="title" 
+                        module="som_localstore">
+                    <title>Manage Sales</title>
+                    <sort_order>10</sort_order>
+                    
+                    <!-- 
+                    when the menu is clicked, take the user here 
+                    -->
+                 <action>local_sale/sale</action>
+                    
+                </sale>
+            </children>
+        </som_localstore>
+    </menu>
+    
+    <!-- define ACL for access to these menu items -->
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <som_localstore translate="title"
+                            module="som_localstore">
+                        <title>Local Store</title>
+                        <sort_order>75</sort_order>
+                        <children>
+                            <sale translate="title" 
+                                    module="som_localstore">
+                                <title>Manage Sales</title>
+                            </sale>
+                        </children>
+                    </som_localstore>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
