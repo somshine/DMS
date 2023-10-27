@@ -1,6 +1,50 @@
-//v1.1.11
+//V1.1.12
 //https://cdn.jsdelivr.net/gh/somshine/DMS/
 //<script src="https://cdn.jsdelivr.net/gh/somshine/DMS@a2f100825f48d242b6096b1a8a98a73d258f18cc/packages.js" data-use-service-core defer></script>
+
+var paymentLinkMapping = [];
+var paymentLink = "";
+
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/test_28o8xXb428lCaqc3cP", packageName: "Training Only Options - Striking Factory (all striking classes) - Boxing"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/test_6oE7tT3BAatK9m8bJk", packageName: "Training Only Options - Striking Factory (all striking classes) - Boxing - 1 Session"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/test_4gw4hH6NMeK0eGs8x7", packageName: "Training Only Options - Striking Factory (all striking classes) - Boxing - 5 Sessions"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/test_14kbK9gom0Ta9m85kU", packageName: "Training Only Options - Striking Factory (all striking classes) - Boxing - 10 Sessions"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/test_7sI8xXdcacBS1TGfZx", packageName: "Training Only Options - Striking Factory (all striking classes) - Striking"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/test_eVa7tT6NMatKfKw8x4", packageName: "Training Only Options - Striking Factory (all striking classes) - Striking - 1 Session"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/test_6oE5lL6NMgS81TG28F", packageName: "Training Only Options - Striking Factory (all striking classes) - Striking - 5 Sessions"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/test_14k15v6NMatK0PC28E", packageName: "Training Only Options - Striking Factory (all striking classes) - Striking - 10 Sessions"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/test_5kAcOdfki45m7e09B5", packageName: "Training Only Options - Striking Factory (all striking classes) - S&C"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/test_eVa8xXgom31i69WaF8", packageName: "Training Only Options - Striking Factory (all striking classes) - S&C - 1 Session"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/test_00gaG5egefO40PC3cF", packageName: "Training Only Options - Striking Factory (all striking classes) - S&C - 5 Sessions"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/test_28o7tTegedFWaqcdRi", packageName: "Training Only Options - Striking Factory (all striking classes) - S&C - 10 Sessions"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/test_dR629zb4259qdCoeVl", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Boxing"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/test_8wMaG5ege59q0PCbJ8", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Boxing - 1 Session"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/test_5kA01r6NM7hy1TG14t", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Boxing - 5 Sessions"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/test_dR6g0p8VUfO441OcNa", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Boxing - 10 Sessions"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/test_14keWlb42cBSgOAcN9", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Striking"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/test_00g8xXfkiatK0PC28u", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Striking - 1 Session"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/test_14k9C1c8659q55S9AV", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Striking - 5 Sessions"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/test_7sI9C1c869pG2XK6oI", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Striking - 10 Sessions"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/test_aEUcOdfkiatKcykbJ1", packageName: "Training Only Options - Athlete Factory (all S&C classes) - S&C"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/test_fZeeWl0pocBS55S00i", packageName: "Training Only Options - Athlete Factory (all S&C classes) - S&C - 1 Session"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/test_dR6aG59ZY7hy7e0dR7", packageName: "Training Only Options - Athlete Factory (all S&C classes) - S&C - 5 Sessions"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/test_8wM8xXfki1Xe7e014k", packageName: "Training Only Options - Athlete Factory (all S&C classes) - S&C - 10 Sessions"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/test_3cs5lLege9pGaqc3cr", packageName: "Training Only Options - All Inclusive *striking & s&c - Boxing"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/test_28og0pfkiatKdCo8wK", packageName: "Training Only Options - All Inclusive *striking & s&c - Boxing - 1 Session"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/test_eVa01rc869pG0PC4gt", packageName: "Training Only Options - All Inclusive *striking & s&c - Boxing - 5 Sessions"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/test_dR63dD1tscBSfKw4gs", packageName: "Training Only Options - All Inclusive *striking & s&c - Boxing - 10 Sessions"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/test_bIYg0p8VUbxOfKw28j", packageName: "Training Only Options - All Inclusive *striking & s&c - Striking"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/test_9AQ29z6NM9pGgOA3cm", packageName: "Training Only Options - All Inclusive *striking & s&c - Striking - 1 Session"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/test_eVabK93BAbxO1TG6ox", packageName: "Training Only Options - All Inclusive *striking & s&c - Striking - 5 Sessions"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/test_6oE6pPege59q9m85ks", packageName: "Training Only Options - All Inclusive *striking & s&c - Striking - 10 Sessions"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/test_14k4hHfki1Xe8i4dQX", packageName: "Training Only Options - All Inclusive *striking & s&c - S&C"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/test_fZe8xX3BA0Ta41O4gm", packageName: "Training Only Options - All Inclusive *striking & s&c - S&C - 1 Session"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/test_eVa7tTdcaatK1TGdQV", packageName: "Training Only Options - All Inclusive *striking & s&c - S&C - 5 Sessions"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/test_cN2bK9b420TaeGs004", packageName: "Training Only Options - All Inclusive *striking & s&c - S&C - 10 Sessions"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/test_cN28xX0pobxO7e0aEH", packageName: "Private Training Sessions - Boxing - 1 Session"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/test_cN215vfki7hy7e0bIK", packageName: "Private Training Sessions - Boxing - 5 Sessions"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/test_00gcOd3BA6dudCodQR", packageName: "Private Training Sessions - Boxing - 10 Sessions"});
+
 
 var packageTotalPrice = 0;
 
@@ -10,40 +54,22 @@ var bookingTotalPrice = 0;
 var bookingTotalWithVatPrice = 0;
 var bookingTotalIncludeVatPrice = 0;
 
-var fitnessPackageValue = 0;
-var privateLesson = 0;
-
 var packageList = [];
-var allInclusivePackageIndex = 0;
-var tainingOnlyOptionIndex = 1;
-var muayThaiPrivateIndex = 2;
-var accommodationIndex = 3;
 
-var paymentLinkMapping = [];
-var paymentLink = "";
-
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/5kA01A4s3dl82fScN0", packageName: "Muay Thai Privates - 10 sessions"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/6oEg0ybUv94S2fS8wJ", packageName: "Muay Thai Privates - 5 sessions"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/7sIaGe4s36WK1bO6oA", packageName: "Muay Thai Privates - 1 session"});
-
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/dR68y66Ab2Gu8Eg7sH", packageName: "Training Only Options - All Inclusive *striking & s&c, S&C - Shaun"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/3cs8y67EfepcbQs7sV", packageName: "Training Only Options - All Inclusive *striking & s&c, Boxing - Vlad"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/aEU29I0bN6WK3jW9B2", packageName: "Training Only Options - All Inclusive *striking & s&c, Striking - Teiwaz"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/cN2dSq3nZ4OCcUweVl", packageName: "Training Only Options - All Inclusive *striking & s&c, Boxing - Jimmy"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/eVa29I4s3bd04o028y", packageName: "Training Only Options - Athlete Factory (all S&C classes), S&C - Shaun"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/eVaaGebUvgxk07K6oN", packageName: "Training Only Options - Athlete Factory (all S&C classes), Boxing - Vlad"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/14k5lUgaL5SG8Eg9AX", packageName: "Training Only Options - Athlete Factory (all S&C classes), Striking - Teiwaz"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/aEU7u2aQrgxk9IkcN8", packageName: "Training Only Options - Athlete Factory (all S&C classes), Boxing - Jimmy"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/5kA7u24s3epc4o05kE", packageName: "Training Only Options - Striking Factory (all striking classes), S&C - Shaun"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/eVa9Ca4s30ym1bO14n", packageName: "Training Only Options - Striking Factory (all striking classes), Boxing - Vlad"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/14keWu8Ij0ymcUw5kC", packageName: "Training Only Options - Striking Factory (all striking classes), Striking - Teiwaz"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/00g5lU7Efgxkf2EcN3", packageName: "Training Only Options - Striking Factory (all striking classes), Boxing - Jimmy"});
+var defaultIndex = 0;
 
 //All-Inclusive Packages
-var buttonResoruces = [$('#trainingOnlyOptionSubmitButton'), $('#allInclusivePackageSubmitButton'), $('#muayThaiPrivateSubmitButton'), $('#accommodationSubmitButton')];
+var buttonResoruces = [$('#allInclusivePackageSubmitButton'), $('#trainingOnlyOptionSubmitButton'), $('#privateSessionSubmitButton'), $('#accommodationSubmitButton')];
 buttonResoruces.forEach(function (element, index) {
 	element.attr("type", "button");
-	element.attr("onclick", "addNewPackage()");
+	let actions = "";
+	if (index == 2) {
+		actions += "calculatePrivateSessionPrice();";
+	} else if (index == 1) {
+		actions += "trainingOnlyOptionsPriceCalc();";
+	}
+	actions += "addNewPackage();";
+	element.attr("onclick", actions);
 });
 
 //Process to payment button implimentation
@@ -56,86 +82,63 @@ $('#delete-and-add-new-booking-button').hide();
 /**
  * All-Inclusive Packages
  */
-var inclusiveFitnessPackagePrice = 0;
-var inclusiveTimePrice = 0;
-var inclusivePrivateLessionPrice = 0;
+var inclusivePackageFirst = 0;
+var inclusivePackageSecond = 0;
+var inclusivePackageThirdNight = 0;
+var inclusivePackageCheckInDay = 0;
+var inclusivePackageFourthLesson = 0;
+var inclusivePackageFifthSession = 0;
+
+allInclusivePackagePriceCalc();
 
 $('#inclusive-accommodation-first').on("change", function () {
-	let packagePrice = getTurkeyCurrency(inclusiveFitnessPackagePrice + inclusiveTimePrice + inclusivePrivateLessionPrice);
-
-	packageList[allInclusivePackageIndex] = {
-		packageName: "All-Inclusive Packages",
-		itemName: formatItemNameString($('#inclusive-accommodation-first :selected').text(),
-			$('#inclusive-fitness-packages :selected').text(),
-			$('#inclusive-packages-time :selected').text(),
-			$('#inclusive-packages-private-lessons-1 :selected').text()),
-		price: packagePrice,
-		prirceValue: (inclusiveFitnessPackagePrice + inclusiveTimePrice + inclusivePrivateLessionPrice),
-		quantity: 1
-	};
-	$('#tainingOnlyOptions').html(packagePrice);
-	$('.booking-inner-tab-content-item-form-block-bottom-price').html(packagePrice);
+	inclusivePackageFirst = parseFloat(this.value);
+	allInclusivePackagePriceCalc();
 });
 
 $('#inclusive-fitness-packages').on("change", function () {
-	inclusiveFitnessPackagePrice = parseFloat(this.value);
-	let packagePrice = getTurkeyCurrency(inclusiveFitnessPackagePrice + inclusiveTimePrice + inclusivePrivateLessionPrice);
-
-	packageList[allInclusivePackageIndex] = {
-		packageName: "All-Inclusive Packages",
-		itemName: formatItemNameString($('#inclusive-accommodation-first :selected').text(),
-			$('#inclusive-fitness-packages :selected').text(),
-			$('#inclusive-packages-time :selected').text(),
-			$('#inclusive-packages-private-lessons-1 :selected').text()),
-		price: packagePrice,
-		prirceValue: (inclusiveFitnessPackagePrice + inclusiveTimePrice + inclusivePrivateLessionPrice),
-		quantity: 1
-	};
-	$('#tainingOnlyOptions').html(packagePrice);
-	$('.booking-inner-tab-content-item-form-block-bottom-price').html(packagePrice);
+	inclusivePackageSecond = parseFloat(this.value);
+	allInclusivePackagePriceCalc();
 });
 
 $('#inclusive-packages-time').on("change", function () {
-	inclusiveTimePrice = parseFloat(this.value);
-	let packagePrice = getTurkeyCurrency(inclusiveFitnessPackagePrice + inclusiveTimePrice + inclusivePrivateLessionPrice);
-
-	packageList[allInclusivePackageIndex] = {
-		packageName: "All-Inclusive Packages",
-		itemName: formatItemNameString($('#inclusive-accommodation-first :selected').text(),
-			$('#inclusive-fitness-packages :selected').text(),
-			$('#inclusive-packages-time :selected').text(),
-			$('#inclusive-packages-private-lessons-1 :selected').text()),
-		price: packagePrice,
-		prirceValue: (inclusiveFitnessPackagePrice + inclusiveTimePrice + inclusivePrivateLessionPrice),
-		quantity: 1
-	};
-	$('#tainingOnlyOptions').html(packagePrice);
-	$('.booking-inner-tab-content-item-form-block-bottom-price').html(packagePrice);
+	inclusivePackageThirdNight = parseFloat(this.value);
+	allInclusivePackagePriceCalc();
 });
 
 $('#inclusive-packages-private-lessons-1').on("change", function () {
-	inclusivePrivateLessionPrice = parseFloat(this.value);
-	let packagePrice = getTurkeyCurrency(inclusiveFitnessPackagePrice + inclusiveTimePrice + inclusivePrivateLessionPrice);
-
-	packageList[allInclusivePackageIndex] = {
-		packageName: "All-Inclusive Packages",
-		itemName: formatItemNameString($('#inclusive-accommodation-first :selected').text(),
-			$('#inclusive-fitness-packages :selected').text(),
-			$('#inclusive-packages-time :selected').text(),
-			$('#inclusive-packages-private-lessons-1 :selected').text()),
-		price: packagePrice,
-		prirceValue: (inclusiveFitnessPackagePrice + inclusiveTimePrice + inclusivePrivateLessionPrice),
-		quantity: 1
-	};
-	$('#tainingOnlyOptions').html(packagePrice);
-	$('.booking-inner-tab-content-item-form-block-bottom-price').html(packagePrice);
+	inclusivePackageFourthLesson = parseFloat(this.value);
+	allInclusivePackagePriceCalc();
 });
 
-function formatItemNameString(incAccommodationFirst, incFitnessPackages, incPackageTime, incPrivetLessons) {
-	return '- ' + incAccommodationFirst + ",<br/>" +
-		'- ' + incFitnessPackages + ",<br/>" +
-		'- ' + incPackageTime + ",<br/>" +
-		'- ' + incPrivetLessons;
+$('#all-inclusive-package-session').on("change", function() {
+	inclusivePackageFifthSession = parseFloat(this.value);
+	allInclusivePackagePriceCalc();
+});
+
+function allInclusivePackagePriceCalc() {
+	inclusivePrivateLessionPrice = parseFloat(this.value);
+	let sessionPrice = inclusivePackageFourthLesson;
+	if (inclusivePackageFifthSession > 0) {
+		sessionPrice = inclusivePackageFourthLesson * inclusivePackageFifthSession;
+	}
+	let packagePrice = getTurkeyCurrency(inclusivePackageFirst + inclusivePackageSecond + inclusivePackageThirdNight + sessionPrice);
+
+	packageList[defaultIndex] = {
+		packageName: "All-Inclusive Packages",
+		itemName: formatItemNameString(inclusivePackageFifthSession),
+		price: packagePrice,
+		prirceValue: (inclusivePackageFirst + inclusivePackageSecond + inclusivePackageThirdNight + sessionPrice),
+		quantity: 1
+	};
+	$('#allInclusivePackagePrice').html(packagePrice);
+}
+
+function formatItemNameString(sessionValue) {
+	return ' - ' + $('#inclusive-accommodation-first :selected').text() + ' - ' +
+			$('#inclusive-fitness-packages :selected').text() + ' - ' +
+			$('#inclusive-packages-time :selected').text() +
+			(sessionValue > 0 ? ' - ' + $('#inclusive-packages-private-lessons-1 :selected').text() : "");
 }
 
 /**
@@ -145,34 +148,45 @@ function formatItemNameString(incAccommodationFirst, incFitnessPackages, incPack
 /*
 	Tab index 2 Training Only Options
 */
+var trainingOnlyOptionFitnessPackageValue = parseFloat($("#Fitness-Packages-2").val());
+var trainingOnlyOptionPrivateLesson = parseFloat($("#Private-Lessons").val());
+var trainingOnlyOptionSessionValue = parseFloat($("#training-only-option-session").val());
+
+trainingOnlyOptionsPriceCalc();
+
 $("#Fitness-Packages-2").on('change', function () {
-	fitnessPackageValue = parseFloat(this.value);
-	let packagePrice = getTurkeyCurrency(fitnessPackageValue + privateLesson);
-	packageList[tainingOnlyOptionIndex] = {
-		packageName: "Training Only Options",
-		itemName: '- ' + $('#Fitness-Packages-2 :selected').text() + ", " + $('#Private-Lessons :selected').text(),
-		price: packagePrice,
-		prirceValue: fitnessPackageValue + privateLesson,
-		quantity: 1
-	};
-	$('#tainingOnlyOptions').html(packagePrice);
-	$('.booking-inner-tab-content-item-form-block-bottom-price').html(packagePrice);
+	trainingOnlyOptionFitnessPackageValue = parseFloat(this.value);
+	trainingOnlyOptionsPriceCalc();
 });
 
 $("#Private-Lessons").on('change', function () {
-	privateLesson = parseFloat(this.value);
-	let packagePrice = getTurkeyCurrency(fitnessPackageValue + privateLesson);
-	packageList[tainingOnlyOptionIndex] = {
+	trainingOnlyOptionPrivateLesson = parseFloat(this.value);
+	trainingOnlyOptionsPriceCalc();
+});
+
+$("#training-only-option-session").on('change', function () {
+	trainingOnlyOptionSessionValue = parseFloat(this.value);
+	trainingOnlyOptionsPriceCalc();
+});
+
+function trainingOnlyOptionsPriceCalc() {
+	let itemName = '- ' + $('#Fitness-Packages-2 :selected').text() + " - " + $('#Private-Lessons :selected').text();
+	let sessionPrice = trainingOnlyOptionPrivateLesson;
+	if (trainingOnlyOptionSessionValue > 0) {
+		sessionPrice = trainingOnlyOptionPrivateLesson * trainingOnlyOptionSessionValue;
+		itemName += " - " + $('#training-only-option-session :selected').text();
+	}
+
+	let packagePrice = getTurkeyCurrency(trainingOnlyOptionFitnessPackageValue + sessionPrice);
+	packageList[defaultIndex] = {
 		packageName: "Training Only Options",
-		itemName: '- ' + $('#Fitness-Packages-2 :selected').text() + ", " + $('#Private-Lessons :selected').text(),
+		itemName: itemName,
 		price: packagePrice,
-		prirceValue: fitnessPackageValue + privateLesson,
+		prirceValue: trainingOnlyOptionFitnessPackageValue + sessionPrice,
 		quantity: 1
 	};
-
-	$('#tainingOnlyOptions').html(getTurkeyCurrency(fitnessPackageValue + privateLesson));
-	$('.booking-inner-tab-content-item-form-block-bottom-price').html(getTurkeyCurrency(fitnessPackageValue + privateLesson));
-});
+	$('#tainingOnlyOptions').html(packagePrice);
+}
 /*
 End Training Only Options
 */
@@ -180,20 +194,34 @@ End Training Only Options
 /**
  * Muay Thai Privates start tab-3 
  */
-$("#Fitness-Packages-3").on('change', function () {
-	let packagePrice = getTurkeyCurrency(parseFloat(this.value));
-	privateLesson = parseFloat(this.value);
-	packageList[muayThaiPrivateIndex] = {
-		packageName: "Muay Thai Privates",
-		itemName: '- ' + $('#Fitness-Packages-3 :selected').text(),
+var privateSessionFirst = parseFloat($("#private-session-item").val());
+var privateSessionSecond = parseFloat($("#private-session-packages-day").val());
+
+calculatePrivateSessionPrice();
+
+$("#private-session-item").on('change', function () {
+	privateSessionFirst = this.value;
+	calculatePrivateSessionPrice();
+});
+
+$("#private-session-packages-day").on('change', function () {
+	privateSessionSecond = this.value;
+	calculatePrivateSessionPrice();
+});
+
+function calculatePrivateSessionPrice() {
+	let packagePrice = getTurkeyCurrency(parseFloat(privateSessionFirst) * parseFloat(privateSessionSecond));
+	let privateSessionPrice = parseFloat(privateSessionFirst) * parseFloat(privateSessionSecond);
+	packageList[defaultIndex] = {
+		packageName: "Private Training Sessions",
+		itemName: '- ' + $('#private-session-item :selected').text() + ' - ' + $('#private-session-packages-day :selected').text(),
 		price: packagePrice,
-		prirceValue: parseFloat(this.value),
+		prirceValue: privateSessionPrice,
 		quantity: 1
 	};
 
-	$('#muay-thai-privates-price').html(packagePrice);
-	$('.booking-inner-tab-content-item-form-block-bottom-price').html(packagePrice);
-});
+	$('#private-session-price').html(packagePrice);
+}
 
 /**
  * Muay Thai Privates end here
@@ -261,7 +289,7 @@ $('._24-radio-button-item').on('click', function () {
 	let packagePrice = getTurkeyCurrency(price);
 	$('#accommodation-package-price').html(packagePrice);
 
-	packageList[accommodationIndex] = {
+	packageList[defaultIndex] = {
 		packageName: "Accommodation",
 		itemName: '- 24 square meters</br>- ' + $(element).val(),
 		price: packagePrice,
@@ -282,7 +310,7 @@ $('._21-radio-button-item').on('click', function () {
 	let packagePrice = getTurkeyCurrency(price);
 	$('#accommodation-package-price').html(packagePrice);
 
-	packageList[accommodationIndex] = {
+	packageList[defaultIndex] = {
 		packageName: "Accommodation",
 		itemName: '- 21 square meters</br>- ' + $(element).val(),
 		price: packagePrice,
@@ -303,7 +331,7 @@ $('._18-radio-button-item').on('click', function () {
 	let packagePrice = getTurkeyCurrency(price);
 	$('#accommodation-package-price').html(packagePrice);
 
-	packageList[accommodationIndex] = {
+	packageList[defaultIndex] = {
 		packageName: "Accommodation",
 		itemName: '- 18 square meters</br>- ' + $(element).val(),
 		price: packagePrice,
@@ -381,7 +409,7 @@ function addNewPackage() {
 		$('#delete-and-add-new-booking-button').show();
 
 		let packageName = item.packageName + ' ' + item.itemName;
-		console.log(packageName);
+		console.log("package comapre", packageName);
 		paymentLinkMapping.forEach((item) => {
 			if (packageName == item.packageName) {
 				paymentLink = item.paymentId;
