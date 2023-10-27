@@ -1,5 +1,6 @@
+//v1.1.11
 //https://cdn.jsdelivr.net/gh/somshine/DMS/
-//<script src="https://cdn.jsdelivr.net/gh/somshine/DMS@9f27948f2fc39f9e125dd57e9dad8e52ca9128ef/packages.js" data-use-service-core defer></script>
+//<script src="https://cdn.jsdelivr.net/gh/somshine/DMS@a2f100825f48d242b6096b1a8a98a73d258f18cc/packages.js" data-use-service-core defer></script>
 
 var packageTotalPrice = 0;
 
@@ -26,17 +27,17 @@ paymentLinkMapping.push({paymentId: "https://buy.stripe.com/6oEg0ybUv94S2fS8wJ",
 paymentLinkMapping.push({paymentId: "https://buy.stripe.com/7sIaGe4s36WK1bO6oA", packageName: "Muay Thai Privates - 1 session"});
 
 paymentLinkMapping.push({paymentId: "https://buy.stripe.com/dR68y66Ab2Gu8Eg7sH", packageName: "Training Only Options - All Inclusive *striking & s&c, S&C - Shaun"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/eVacOm3nZepc1bO28i", packageName: "Training Only Options - All Inclusive *striking & s&c, Boxing - Vlad"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/6oEg0y9Mnbd0f2E14d", packageName: "Training Only Options - All Inclusive *striking & s&c, Striking - Teiwaz"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/7sIcOm4s3a8W1bO4go", packageName: "Training Only Options - All Inclusive *striking & s&c, Boxing - Jimmy"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/dR6g0ygaLftgbQsbIP", packageName: "Training Only Options - Athlete Factory (all S&C classes), S&C - Shaun"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/cN2eWu0bNch47Ac5kq", packageName: "Training Only Options - Athlete Factory (all S&C classes), Boxing - Vlad"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/28o01Af6Ha8W1bO4gl", packageName: "Training Only Options - Athlete Factory (all S&C classes), Striking - Teiwaz"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/4gw6pYbUv4OCg6I28c", packageName: "Training Only Options - Athlete Factory (all S&C classes), Boxing - Jimmy"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/28ocOm0bN2Gu6w8fZ1", packageName: "Training Only Options - Striking Factory (all striking classes), S&C - Shaun"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/5kA15E3nZ2Gu3jWaEG", packageName: "Training Only Options - Striking Factory (all striking classes), Boxing - Vlad"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/dR66pYcYz80OcUw3cd", packageName: "Training Only Options - Striking Factory (all striking classes), Striking - Teiwaz"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/5kAg0y0bN80OcUwaEE", packageName: "Training Only Options - Striking Factory (all striking classes), Boxing - Jimmy"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/3cs8y67EfepcbQs7sV", packageName: "Training Only Options - All Inclusive *striking & s&c, Boxing - Vlad"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/aEU29I0bN6WK3jW9B2", packageName: "Training Only Options - All Inclusive *striking & s&c, Striking - Teiwaz"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/cN2dSq3nZ4OCcUweVl", packageName: "Training Only Options - All Inclusive *striking & s&c, Boxing - Jimmy"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/eVa29I4s3bd04o028y", packageName: "Training Only Options - Athlete Factory (all S&C classes), S&C - Shaun"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/eVaaGebUvgxk07K6oN", packageName: "Training Only Options - Athlete Factory (all S&C classes), Boxing - Vlad"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/14k5lUgaL5SG8Eg9AX", packageName: "Training Only Options - Athlete Factory (all S&C classes), Striking - Teiwaz"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/aEU7u2aQrgxk9IkcN8", packageName: "Training Only Options - Athlete Factory (all S&C classes), Boxing - Jimmy"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/5kA7u24s3epc4o05kE", packageName: "Training Only Options - Striking Factory (all striking classes), S&C - Shaun"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/eVa9Ca4s30ym1bO14n", packageName: "Training Only Options - Striking Factory (all striking classes), Boxing - Vlad"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/14keWu8Ij0ymcUw5kC", packageName: "Training Only Options - Striking Factory (all striking classes), Striking - Teiwaz"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/00g5lU7Efgxkf2EcN3", packageName: "Training Only Options - Striking Factory (all striking classes), Boxing - Jimmy"});
 
 //All-Inclusive Packages
 var buttonResoruces = [$('#trainingOnlyOptionSubmitButton'), $('#allInclusivePackageSubmitButton'), $('#muayThaiPrivateSubmitButton'), $('#accommodationSubmitButton')];
@@ -403,7 +404,8 @@ function processToPayment() {
 		return false;
 	}
 
-	window.location.href = paymentLink;
+	window.open(paymentLink, '_blank');
+	// window.location.href = paymentLink;
 }
 
 function bookingSystemRegistration() {
