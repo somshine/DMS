@@ -1,6 +1,6 @@
-//V1.1.13
+//V1.1.14
 //https://cdn.jsdelivr.net/gh/somshine/DMS/
-//<script src="https://cdn.jsdelivr.net/gh/somshine/DMS@a2f100825f48d242b6096b1a8a98a73d258f18cc/packages.js" data-use-service-core defer></script>
+//<script src="https://cdn.jsdelivr.net/gh/somshine/DMS@2d6a1f29901ce44da45b4da374509f7affe2167b/packages.js" data-use-service-core defer></script>
 
 var paymentLinkMapping = [];
 var paymentLink = "";
@@ -56,6 +56,9 @@ paymentLinkMapping.push({paymentId: "https://buy.stripe.com/00g7u2aQr0ym3jW5lu",
 paymentLinkMapping.push({paymentId: "https://buy.stripe.com/14k4hQ1fRa8W1bO15d", packageName: "Training Only Options - Striking Factory (all striking classes) - Muay Thai - 5 Sessions"});
 paymentLinkMapping.push({paymentId: "https://buy.stripe.com/6oEg0ygaLepcdYAcNU", packageName: "Training Only Options - Striking Factory (all striking classes) - Muay Thai - 10 Sessions"});
 paymentLinkMapping.push({paymentId: "https://buy.stripe.com/5kAcOm4s32Gu5s4bJP", packageName: "Training Only Options - Striking Factory (all striking classes) - Muay Thai"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/8wMaGe8Ij3Ky8Eg7tN", packageName: "Private Training Sessions - Muay Thai - 1 Session"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/8wM29I8Ij2Gu1bOeWe", packageName: "Private Training Sessions - Muay Thai - 5 Sessions"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/14k01A6Aba8Wf2EcO5", packageName: "Private Training Sessions - Muay Thai - 10 Sessions"});
 
 
 var packageTotalPrice = 0;
