@@ -1,64 +1,68 @@
-//V1.1.14
+//V1.1.15
 //https://cdn.jsdelivr.net/gh/somshine/DMS/
-//<script src="https://cdn.jsdelivr.net/gh/somshine/DMS@2d6a1f29901ce44da45b4da374509f7affe2167b/packages.js" data-use-service-core defer></script>
+//<script src="https://cdn.jsdelivr.net/gh/somshine/DMS@61ba31e9743c7f3497a35e5d915f5fb8c8931e5c/packages.js" data-use-service-core defer></script>
 
 var paymentLinkMapping = [];
 var paymentLink = "";
 
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/fZe4hQbUv6WK9Ik016", packageName: "Training Only Options - Striking Factory (all striking classes) - Boxing"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/9AQeWu8Ijch4dYA29d", packageName: "Training Only Options - Striking Factory (all striking classes) - Boxing - 1 Session"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/7sI7u23nZ3Kyf2EeVY", packageName: "Training Only Options - Striking Factory (all striking classes) - Boxing - 5 Sessions"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/5kAeWu7Ef2Gu9Ik5ln", packageName: "Training Only Options - Striking Factory (all striking classes) - Boxing - 10 Sessions"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/cN2dSq4s380O4o0dRS", packageName: "Training Only Options - Striking Factory (all striking classes) - Striking"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/4gw29IcYz0ymcUw6pp", packageName: "Training Only Options - Striking Factory (all striking classes) - Striking - 1 Session"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/5kA5lU8Ija8W9Ik298", packageName: "Training Only Options - Striking Factory (all striking classes) - Striking - 5 Sessions"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/00g6pY2jV94S1bOfZX", packageName: "Training Only Options - Striking Factory (all striking classes) - Striking - 10 Sessions"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/4gwdSq4s3ch46w89By", packageName: "Training Only Options - Striking Factory (all striking classes) - S&C"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/8wM15E5w72Gu3jW00X", packageName: "Training Only Options - Striking Factory (all striking classes) - S&C - 1 Session"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/28oeWu7Ef80O3jW8xs", packageName: "Training Only Options - Striking Factory (all striking classes) - S&C - 5 Sessions"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/fZeaGe2jV0ym1bO5lf", packageName: "Training Only Options - Striking Factory (all striking classes) - S&C - 10 Sessions"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/9AQ9Ca3nZdl89Ik3d6", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Boxing"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/14k3dM5w7gxk6w88xp", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Boxing - 1 Session"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/dR6dSq6Ab0ym2fS00S", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Boxing - 5 Sessions"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/7sI3dM3nZdl8f2EdRH", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Boxing - 10 Sessions"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/cN23dM2jV6WK1bO6pe", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Striking"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/aEU7u2gaL80ObQs6pd", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Striking - 1 Session"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/00g15E8IjgxkdYA7tg", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Striking - 5 Sessions"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/fZe4hQbUvbd01bO3cZ", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Striking - 10 Sessions"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/7sI9Ca4s34OCdYA5l6", packageName: "Training Only Options - Athlete Factory (all S&C classes) - S&C"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/00g7u2f6Hdl88Eg5l5", packageName: "Training Only Options - Athlete Factory (all S&C classes) - S&C - 1 Session"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/cN28y65w780O4o09Bk", packageName: "Training Only Options - Athlete Factory (all S&C classes) - S&C - 5 Sessions"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/5kA8y6bUv0ymg6I28R", packageName: "Training Only Options - Athlete Factory (all S&C classes) - S&C - 10 Sessions"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/14kaGe5w7epc8EgfZG", packageName: "Training Only Options - All Inclusive *striking & s&c - Boxing"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/aEUaGeaQrch4dYAbJp", packageName: "Training Only Options - All Inclusive *striking & s&c - Boxing - 1 Session"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/4gwg0ye2D1Cq2fSdRw", packageName: "Training Only Options - All Inclusive *striking & s&c - Boxing - 5 Sessions"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/6oE15EaQrgxk7AcfZD", packageName: "Training Only Options - All Inclusive *striking & s&c - Boxing - 10 Sessions"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/aEU01Ae2D3KybQs3cQ", packageName: "Training Only Options - All Inclusive *striking & s&c - Striking"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/9AQ15EbUv80O2fS9Bd", packageName: "Training Only Options - All Inclusive *striking & s&c - Striking - 1 Session"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/7sI8y62jV1Cq8EgdRs", packageName: "Training Only Options - All Inclusive *striking & s&c - Striking - 5 Sessions"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/6oE15EgaLgxk7Ac28J", packageName: "Training Only Options - All Inclusive *striking & s&c - Striking - 10 Sessions"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/3csaGe1fR1Cq8Eg7t2", packageName: "Training Only Options - All Inclusive *striking & s&c - S&C"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/cN201AbUvftg7Ac5kT", packageName: "Training Only Options - All Inclusive *striking & s&c - S&C - 1 Session"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/dR63dMbUvgxk6w800y", packageName: "Training Only Options - All Inclusive *striking & s&c - S&C - 5 Sessions"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/6oEdSqaQr2GubQs00x", packageName: "Training Only Options - All Inclusive *striking & s&c - S&C - 10 Sessions"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/dR68y65w71Cq5s47sY", packageName: "Private Training Sessions - Boxing - 5 Sessions"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/5kAg0y2jVbd0aMo28D", packageName: "Private Training Sessions - Boxing - 10 Sessions"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/eVacOm9Mn3Ky9Ik14y", packageName: "Private Training Sessions - Boxing - 1 Session"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/28o9Caf6HepcbQscO4", packageName: "Training Only Options - All Inclusive *striking & s&c - Muay Thai - 1 Session"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/8wMaGe3nZgxkaMo01h", packageName: "Training Only Options - All Inclusive *striking & s&c - Muay Thai - 5 Sessions"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/3cs3dMgaL94SaMo9BQ", packageName: "Training Only Options - All Inclusive *striking & s&c - Muay Thai - 10 Sessions"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/eVa9Ca2jV1Cq1bOg0d", packageName: "Training Only Options - All Inclusive *striking & s&c - Muay Thai"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/14k9CagaLch4g6IcO0", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Muay Thai - 1 Session"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/14kcOm7Ef80OcUweW7", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Muay Thai - 5 Sessions"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/28o6pY8Ijepc4o0g0a", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Muay Thai - 10 Sessions"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/28o4hQe2Depc9IkcNX", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Muay Thai"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/00g7u2aQr0ym3jW5lu", packageName: "Training Only Options - Striking Factory (all striking classes) - Muay Thai - 1 Session"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/14k4hQ1fRa8W1bO15d", packageName: "Training Only Options - Striking Factory (all striking classes) - Muay Thai - 5 Sessions"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/6oEg0ygaLepcdYAcNU", packageName: "Training Only Options - Striking Factory (all striking classes) - Muay Thai - 10 Sessions"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/5kAcOm4s32Gu5s4bJP", packageName: "Training Only Options - Striking Factory (all striking classes) - Muay Thai"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/8wMaGe8Ij3Ky8Eg7tN", packageName: "Private Training Sessions - Muay Thai - 1 Session"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/8wM29I8Ij2Gu1bOeWe", packageName: "Private Training Sessions - Muay Thai - 5 Sessions"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/14k01A6Aba8Wf2EcO5", packageName: "Private Training Sessions - Muay Thai - 10 Sessions"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/14keWucYzgxkcUw7uf", packageName: "Training Only Options - Striking Factory (all striking classes) - Western Boxing"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/8wMeWu5w7bd0cUwaGs", packageName: "Training Only Options - Striking Factory (all striking classes) - Western Boxing - 1 Session"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/9AQ01Af6H80O07K01P", packageName: "Training Only Options - Striking Factory (all striking classes) - Western Boxing - 5 Sessions"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/7sIcOm6Abch407KcOC", packageName: "Training Only Options - Striking Factory (all striking classes) - Western Boxing - 10 Sessions"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/cN201A9Mnbd04o001F", packageName: "Training Only Options - Striking Factory (all striking classes) - Striking"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/6oE15Ef6H1Cq7Ac6qf", packageName: "Training Only Options - Striking Factory (all striking classes) - Striking - 1 Session"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/aEUeWu8Ij4OC9Ik9Cs", packageName: "Training Only Options - Striking Factory (all striking classes) - Striking - 5 Sessions"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/eVa3dMe2D5SG3jWdSJ", packageName: "Training Only Options - Striking Factory (all striking classes) - Striking - 10 Sessions"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/dR66pYf6Hftg8Eg01G", packageName: "Training Only Options - Striking Factory (all striking classes) - S&C"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/aEUbKi4s380O5s42a2", packageName: "Training Only Options - Striking Factory (all striking classes) - S&C - 1 Session"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/9AQdSqbUv5SG2fScOH", packageName: "Training Only Options - Striking Factory (all striking classes) - S&C - 5 Sessions"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/28oaGebUvftg3jW8ys", packageName: "Training Only Options - Striking Factory (all striking classes) - S&C - 10 Sessions"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/5kA15EaQrftg8Eg01H", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Western Boxing"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/eVadSq1fRepc2fS4id", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Western Boxing - 1 Session"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/6oEbKi2jVa8W3jW8yu", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Western Boxing - 5 Sessions"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/bIYaGe6Ab94S4o0cOL", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Western Boxing - 10 Sessions"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/9AQ3dM5w71Cqg6IbKq", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Striking"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/14k5lU1fRch4cUw4ig", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Striking - 1 Session"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/bIY6pYf6H80O5s42a9", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Striking - 5 Sessions"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/14kdSq9Mn4OCf2E8yy", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Striking - 10 Sessions"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/8wM01AbUvdl89IkcOv", packageName: "Training Only Options - Athlete Factory (all S&C classes) - S&C"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/14kbKie2D4OC07K8yz", packageName: "Training Only Options - Athlete Factory (all S&C classes) - S&C - 1 Session"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/fZebKi0bN2Gu5s4dSU", packageName: "Training Only Options - Athlete Factory (all S&C classes) - S&C - 5 Sessions"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/6oE29IbUv3KyaMo025", packageName: "Training Only Options - Athlete Factory (all S&C classes) - S&C - 10 Sessions"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/eVaaGecYz1CqdYA15O", packageName: "Training Only Options - All Inclusive *striking & s&c - Western Boxing"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/3cs01AgaLdl83jWg14", packageName: "Training Only Options - All Inclusive *striking & s&c - Western Boxing - 1 Session"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/14k7u2cYz4OCf2E9CH", packageName: "Training Only Options - All Inclusive *striking & s&c - Western Boxing - 5 Sessions"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/bIY7u28Ij2Gu07K5ms", packageName: "Training Only Options - All Inclusive *striking & s&c - Western Boxing - 10 Sessions"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/5kAbKiaQr80OdYAcOx", packageName: "Training Only Options - All Inclusive *striking & s&c - Striking"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/5kA3dMgaLepcbQs2ah", packageName: "Training Only Options - All Inclusive *striking & s&c - Striking - 1 Session"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/6oEcOm5w7gxk8Eg9CK", packageName: "Training Only Options - All Inclusive *striking & s&c - Striking - 5 Sessions"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/dR69Ca6Ab94ScUwdT1", packageName: "Training Only Options - All Inclusive *striking & s&c - Striking - 10 Sessions"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/7sI01AgaLa8WdYA8yi", packageName: "Training Only Options - All Inclusive *striking & s&c - S&C"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/dR6eWu4s33Ky8Egg1a", packageName: "Training Only Options - All Inclusive *striking & s&c - S&C - 1 Session"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/cN215E3nZbd06w8cOZ", packageName: "Training Only Options - All Inclusive *striking & s&c - S&C - 5 Sessions"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/fZe7u28Ij94SdYAcP0", packageName: "Training Only Options - All Inclusive *striking & s&c - S&C - 10 Sessions"});
+
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/7sI9CacYzftg4o05lW", packageName: "Private Training Sessions - Western Boxing - 5 Sessions"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/aEU8y67Ef0ymf2Eg0B", packageName: "Private Training Sessions - Western Boxing - 10 Sessions"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/28o5lU7Ef80O7Acg0z", packageName: "Private Training Sessions - Western Boxing - 1 Session"});
+
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/4gw4hQ5w70ym4o015C", packageName: "Training Only Options - All Inclusive *striking & s&c - Muay Thai - 1 Session"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/00gg0y2jV80O07K7u1", packageName: "Training Only Options - All Inclusive *striking & s&c - Muay Thai - 5 Sessions"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/28ocOm6Ab1Cq2fS7u2", packageName: "Training Only Options - All Inclusive *striking & s&c - Muay Thai - 10 Sessions"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/28og0y4s3gxkcUw6pV", packageName: "Training Only Options - All Inclusive *striking & s&c - Muay Thai"});
+
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/bIY8y60bNdl8bQs15y", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Muay Thai - 1 Session"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/aEU6pY4s32GubQs9C5", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Muay Thai - 5 Sessions"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/5kAbKibUv4OC1bOeWq", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Muay Thai - 10 Sessions"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/9AQdSq6Abch407K9C3", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Muay Thai"});
+
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/7sI9Ca9Mn1CqbQs8xW", packageName: "Training Only Options - Striking Factory (all striking classes) - Muay Thai - 1 Session"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/14keWugaL3Ky8EgbK9", packageName: "Training Only Options - Striking Factory (all striking classes) - Muay Thai - 5 Sessions"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/5kA9Caf6H80O7AceWm", packageName: "Training Only Options - Striking Factory (all striking classes) - Muay Thai - 10 Sessions"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/8wM01AgaL94S3jW8xV", packageName: "Training Only Options - Striking Factory (all striking classes) - Muay Thai"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/7sI7u20bN6WK2fS15s", packageName: "Private Training Sessions - Muay Thai - 1 Session"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/8wM8y63nZ1CqbQs5lH", packageName: "Private Training Sessions - Muay Thai - 5 Sessions"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/4gw01A4s3a8W07KcO8", packageName: "Private Training Sessions - Muay Thai - 10 Sessions"});
 
 
 var packageTotalPrice = 0;
