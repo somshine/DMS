@@ -1,4 +1,4 @@
-//V1.1.16
+//V1.1.17
 //https://cdn.jsdelivr.net/gh/somshine/DMS/
 //<script src="https://cdn.jsdelivr.net/gh/somshine/DMS@61ba31e9743c7f3497a35e5d915f5fb8c8931e5c/packages.js" data-use-service-core defer></script>
 
@@ -294,69 +294,6 @@ $("#Checkout-Date-2").on("input", function () {
 			}
 		}
 	}
-});
-
-$('._24-radio-button-item').on('click', function () {
-	if (accommodationNumberOfDays == 0) {
-		alert("Please select Check-In and Check-Out dates and then select the packages.");
-		return false;
-	}
-	let element = $(this).find("input[name='Tyson-Suite']");
-	console.log($(element).val(), $(element).attr("price"), accommodationNumberOfDays);
-
-	let price = accommodationNumberOfDays * parseFloat($(element).attr("price"));
-	let packagePrice = getTurkeyCurrency(price);
-	$('#accommodation-package-price').html(packagePrice);
-
-	packageList[defaultIndex] = {
-		packageName: "Accommodation",
-		itemName: '- 24 square meters</br>- ' + $(element).val(),
-		price: packagePrice,
-		prirceValue: price,
-		quantity: 1
-	};
-});
-
-$('._21-radio-button-item').on('click', function () {
-	if (accommodationNumberOfDays == 0) {
-		alert("Please select Check-In and Check-Out dates and then select the packages.");
-		return false;
-	}
-	let element = $(this).find("input[name='Tyson-Suite']");
-	console.log($(element).val(), $(element).attr("price"), accommodationNumberOfDays);
-
-	let price = accommodationNumberOfDays * parseFloat($(element).attr("price"));
-	let packagePrice = getTurkeyCurrency(price);
-	$('#accommodation-package-price').html(packagePrice);
-
-	packageList[defaultIndex] = {
-		packageName: "Accommodation",
-		itemName: '- 21 square meters</br>- ' + $(element).val(),
-		price: packagePrice,
-		prirceValue: price,
-		quantity: 1
-	};
-});
-
-$('._18-radio-button-item').on('click', function () {
-	if (accommodationNumberOfDays == 0) {
-		alert("Please select Check-In and Check-Out dates and then select the packages.");
-		return false;
-	}
-	let element = $(this).find("input[name='Tyson-Suite']");
-	console.log($(element).val(), $(element).attr("price"), accommodationNumberOfDays);
-
-	let price = accommodationNumberOfDays * parseFloat($(element).attr("price"));
-	let packagePrice = getTurkeyCurrency(price);
-	$('#accommodation-package-price').html(packagePrice);
-
-	packageList[defaultIndex] = {
-		packageName: "Accommodation",
-		itemName: '- 18 square meters</br>- ' + $(element).val(),
-		price: packagePrice,
-		prirceValue: price,
-		quantity: 1
-	};
 });
 
 /**
