@@ -1,4 +1,4 @@
-//V1.1.15
+//V1.1.16
 //https://cdn.jsdelivr.net/gh/somshine/DMS/
 //<script src="https://cdn.jsdelivr.net/gh/somshine/DMS@61ba31e9743c7f3497a35e5d915f5fb8c8931e5c/packages.js" data-use-service-core defer></script>
 
@@ -78,13 +78,13 @@ var packageList = [];
 var defaultIndex = 0;
 
 //All-Inclusive Packages
-var buttonResoruces = [$('#allInclusivePackageSubmitButton'), $('#trainingOnlyOptionSubmitButton'), $('#privateSessionSubmitButton'), $('#accommodationSubmitButton')];
+var buttonResoruces = [$('#trainingOnlyOptionSubmitButton'), $('#privateSessionSubmitButton')];
 buttonResoruces.forEach(function (element, index) {
 	element.attr("type", "button");
 	let actions = "";
-	if (index == 2) {
+	if (index == 1) {
 		actions += "calculatePrivateSessionPrice();";
-	} else if (index == 1) {
+	} else if (index == 0) {
 		actions += "trainingOnlyOptionsPriceCalc();";
 	}
 	actions += "addNewPackage();";
