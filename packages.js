@@ -1,4 +1,4 @@
-//V1.1.17
+//V1.1.18
 //https://cdn.jsdelivr.net/gh/somshine/DMS/
 //<script src="https://cdn.jsdelivr.net/gh/somshine/DMS@61ba31e9743c7f3497a35e5d915f5fb8c8931e5c/packages.js" data-use-service-core defer></script>
 
@@ -171,11 +171,19 @@ var trainingOnlyOptionFitnessPackageValue = parseFloat($("#Fitness-Packages-2").
 var trainingOnlyOptionPrivateLesson = parseFloat($("#Private-Lessons").val());
 var trainingOnlyOptionSessionValue = parseFloat($("#training-only-option-session").val());
 
+var trainingDescriptions = [];
+trainingDescriptions.push("The Striking Department: The Striking Department is where you go to sharpen the axe.");
+trainingDescriptions.push("Athlete factory: The Athlete Factory is where you go to build the Armour.");
+trainingDescriptions.push("All Access: Our All Access pass includes a free 30-minute consultation with our onsite Mindset & Performance Specialist, Shaun Kober.");
+
 trainingOnlyOptionsPriceCalc();
 
 $("#Fitness-Packages-2").on('change', function () {
 	trainingOnlyOptionFitnessPackageValue = parseFloat(this.value);
 	trainingOnlyOptionsPriceCalc();
+	
+	let selectedIndex = $("#Fitness-Packages-2 option:selected").index();
+	$('#text-training-package-section').html(trainingDescriptions[selectedIndex]);
 });
 
 $("#Private-Lessons").on('change', function () {
@@ -395,3 +403,8 @@ function processToPayment() {
 function bookingSystemRegistration() {
 
 }
+
+/****
+Based on dropdown selection change the message.
+**/
+$()
