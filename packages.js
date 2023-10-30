@@ -8,7 +8,7 @@ var paymentLink = "";
 paymentLinkMapping.push({paymentId: "https://buy.stripe.com/14k6pYbUvepc1bO9Dd", packageName: "Training Only Options - Striking Factory (all striking classes) - Muay Thai - 1 Week"});
 paymentLinkMapping.push({paymentId: "https://buy.stripe.com/3cs6pY7Ef1CqbQseXy", packageName: "Training Only Options - Striking Factory (all striking classes) - Muay Thai – 2 Week"});
 paymentLinkMapping.push({paymentId: "https://buy.stripe.com/4gw4hQcYzftg6w89Df", packageName: "Training Only Options - Striking Factory (all striking classes) - Muay Thai - 1 Month"});
-paymentLinkMapping.push({paymentId: "https://buy.stripe.com/14kdSq5w76WK07KbLo", packageName: "Training Only Options - Striking Factory (all striking classes) - Muay Thai - 1 Week - 1 Session"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/8wMg0y7Efftg4o018E", packageName: "Training Only Options - Striking Factory (all striking classes) - Muay Thai - 1 Week - 1 Session"});
 paymentLinkMapping.push({paymentId: "https://buy.stripe.com/28ocOm0bNbd0cUwaHl", packageName: "Training Only Options - Striking Factory (all striking classes) - Muay Thai - 1 Week – 5 Sessions"});
 paymentLinkMapping.push({paymentId: "https://buy.stripe.com/aEU5lUbUv0ymdYAbLq", packageName: "Training Only Options - Striking Factory (all striking classes) - Muay Thai - 1 Week - 10 Sessions"});
 paymentLinkMapping.push({paymentId: "https://buy.stripe.com/14kbKi7Efbd0f2E02J", packageName: "Training Only Options - Striking Factory (all striking classes) - Muay Thai – 2 Week - 1 Session"});
