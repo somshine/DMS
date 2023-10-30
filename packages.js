@@ -1,9 +1,19 @@
-//V1.1.21
+//V1.1.22
 //https://cdn.jsdelivr.net/gh/somshine/DMS/
 //<script src="https://cdn.jsdelivr.net/gh/somshine/DMS@61ba31e9743c7f3497a35e5d915f5fb8c8931e5c/packages.js" data-use-service-core defer></script>
 
 var paymentLinkMapping = [];
 var paymentLink = "";
+
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/8wM6pY9Mnepc1bOeZv", packageName: "Training Only Options - Striking Factory (all striking classes) - 1 Week"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/00g4hQbUvbd0aMo9Fc", packageName: "Training Only Options - Striking Factory (all striking classes) - 2 Week"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/00g7u23nZ3Kyg6I04D", packageName: "Training Only Options - Striking Factory (all striking classes) - 1 Month"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/00g8y6e2D2Gu9Ik4kU", packageName: "Training Only Options - Athlete Factory (all S&C classes) - 1 Week"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/9AQ29I0bN0ym6w8cRr", packageName: "Training Only Options - Athlete Factory (all S&C classes) - 2 Week"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/bIYdSq4s380Og6IaJk", packageName: "Training Only Options - Athlete Factory (all S&C classes) - 1 Month"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/cN229IaQr4OCf2E18L", packageName: "Training Only Options - All Inclusive *striking & s&c - 1 Week"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/aEUbKi4s36WK2fSbNq", packageName: "Training Only Options - All Inclusive *striking & s&c - 2 Week"});
+paymentLinkMapping.push({paymentId: "https://buy.stripe.com/7sI5lU3nZ1Cq9IkdVz", packageName: "Training Only Options - All Inclusive *striking & s&c - 1 Month"});
 
 paymentLinkMapping.push({paymentId: "https://buy.stripe.com/14k6pYbUvepc1bO9Dd", packageName: "Training Only Options - Striking Factory (all striking classes) - Muay Thai - 1 Week"});
 paymentLinkMapping.push({paymentId: "https://buy.stripe.com/3cs6pY7Ef1CqbQseXy", packageName: "Training Only Options - Striking Factory (all striking classes) - Muay Thai – 2 Week"});
@@ -251,6 +261,9 @@ $("#Fitness-Packages-2").on('change', function () {
 
 $("#Private-Lessons").on('change', function () {
 	trainingOnlyOptionPrivateLesson = parseFloat(this.value);
+	if (trainingOnlyOptionPrivateLesson == 0) {
+		trainingOnlyOptionPrivateLesson = 0;
+	}
 	trainingOnlyOptionsPriceCalc();
 });
 
@@ -264,7 +277,10 @@ $("#training-duration").on('change', function () {
 });
 
 function trainingOnlyOptionsPriceCalc() {
-	let itemName = '- ' + $('#Fitness-Packages-2 :selected').text() + " - " + $('#Private-Lessons :selected').text();
+	let itemName = '- ' + $('#Fitness-Packages-2 :selected').text();
+	if ($('#Private-Lessons :selected').val() > 0) {
+		itemName += " - " + $('#Private-Lessons :selected').text();
+	}
 	
 	if ($('#Fitness-Packages-2 :selected').text() == "All Inclusive *striking & s&c") {
 		if ($("#training-duration :selected").text() == "1 Week") {
@@ -495,10 +511,4 @@ function processToPayment() {
 }
 
 function bookingSystemRegistration() {
-
 }
-
-/****
-Based on dropdown selection change the message.
-**/
-$()
