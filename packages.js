@@ -1,4 +1,4 @@
-//V1.1.20
+//V1.1.21
 //https://cdn.jsdelivr.net/gh/somshine/DMS/
 //<script src="https://cdn.jsdelivr.net/gh/somshine/DMS@61ba31e9743c7f3497a35e5d915f5fb8c8931e5c/packages.js" data-use-service-core defer></script>
 
@@ -268,19 +268,19 @@ function trainingOnlyOptionsPriceCalc() {
 	
 	if ($('#Fitness-Packages-2 :selected').text() == "All Inclusive *striking & s&c") {
 		if ($("#training-duration :selected").text() == "1 Week") {
-			durationPrice = 1000;
-		} else if ($("#training-duration :selected").text() == "2 Week") {
-			durationPrice = 4000;
-		} else if ($("#training-duration :selected").text() == "1 Month") {
-			durationPrice = 7000;
-		}
-	} else {
-		if ($("#training-duration :selected").text() == "1 Week") {
-			durationPrice = 1000;
+			durationPrice = 0;
 		} else if ($("#training-duration :selected").text() == "2 Week") {
 			durationPrice = 2000;
 		} else if ($("#training-duration :selected").text() == "1 Month") {
-			durationPrice = 3500;
+			durationPrice = 5500;
+		}
+	} else {
+		if ($("#training-duration :selected").text() == "1 Week") {
+			durationPrice = 0;
+		} else if ($("#training-duration :selected").text() == "2 Week") {
+			durationPrice = 1000;
+		} else if ($("#training-duration :selected").text() == "1 Month") {
+			durationPrice = 2500;
 		}
 	}
 	
