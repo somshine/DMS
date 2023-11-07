@@ -1,4 +1,25 @@
-//V_1.1.2
+//V-1.1.3
+//<script src="https://cdn.jsdelivr.net/gh/somshine/DMS@master/accommodation.js" data-use-service-core defer></script>
+
+/***********************
+ * Section to open the popup
+ */
+//All tyson popups
+$('#room-pool-sauna-tyson, #room-workouts-tyson, #all-room-tyson').magnificPopup({
+	items: {src: '#tyson-suite-modal', type: 'inline'}
+});
+
+$('#room-pool-sauna-crawford, #room-workouts-crawford, #all-room-crawford').magnificPopup({
+	items: {src: '#crawford-deluxe-modal', type: 'inline'}
+});
+
+$('#room-pool-sauna-canelo, #room-workouts-canelo, #all-room-canelo').magnificPopup({
+	items: {src: '#canelo-double-modal', type: 'inline'}
+});
+
+/****************
+ * First tab
+ */
 
 var onlyRoomTyson = [];
 onlyRoomTyson.push({name: "Tyson Suite", type: "1 DAY", price: 1200});
@@ -30,31 +51,79 @@ $("#only-room-canelo").on("click", function() {
 	changePackage(this, 'canelo', 'Only Room', onlyRoomCanelo);
 });
 
-//Room and Sauna second tab on wards
-$('#room-sauna-tyson').magnificPopup({
-  items: {
-      src: '#tyson-suite-modal',
-      type: 'inline'
-  }
+/***********************************
+ * Next Tab
+ * Second tab Room +Poll & Sauna
+ */
+var onlyRoomPoolSaunaTyson = [];
+onlyRoomPoolSaunaTyson.push({name: "Tyson Suite", type: "1 DAY", price: 1300});
+onlyRoomPoolSaunaTyson.push({name: "Tyson Suite", type: "1 WEEK", price: 8000});
+onlyRoomPoolSaunaTyson.push({name: "Tyson Suite", type: "2 WEEKS", price: 15000});
+onlyRoomPoolSaunaTyson.push({name: "Tyson Suite", type: "1 MONTH", price: 24000});
+
+$("#room-pool-sauna-tyson").on("click", function() {
+	changePackage(this, 'tyson', 'Room +Pool & Sauna', onlyRoomPoolSaunaTyson);
 });
 
-var roomSaunaTyson = [];
-roomSaunaTyson.push({name: "Tyson Suite", type: "1 DAY", price: 1300});
-roomSaunaTyson.push({name: "Tyson Suite", type: "1 WEEK", price: 8000});
-roomSaunaTyson.push({name: "Tyson Suite", type: "2 WEEKS", price: 15000});
-roomSaunaTyson.push({name: "Tyson Suite",  type: "1 MONTH", price: 24000});
+var onlyRoomPoolSaunaCrawford = [];
+onlyRoomPoolSaunaCrawford.push({name: "Crawford Suite", type: "1 DAY", price: 1200});
+onlyRoomPoolSaunaCrawford.push({name: "Crawford Suite", type: "1 WEEK", price: 7500});
+onlyRoomPoolSaunaCrawford.push({name: "Crawford Suite", type: "2 WEEKS", price: 14000});
+onlyRoomPoolSaunaCrawford.push({name: "Crawford Suite", type: "1 MONTH", price: 22000});
 
-$('#room-sauna-tyson').on("click", function() {
-	changePackage(this, 'tyson', 'Room + sauna', roomSaunaTyson);
+$("#room-pool-sauna-crawford").on("click", function() {
+	changePackage(this, 'crawford', 'Room +Pool & Sauna', onlyRoomPoolSaunaCrawford);
+});
+
+var onlyRoomPoolSaunaCanelo = [];
+onlyRoomPoolSaunaCanelo.push({name: "Canelo Suite", type: "1 DAY", price: 1100});
+onlyRoomPoolSaunaCanelo.push({name: "Canelo Suite", type: "1 WEEK", price: 7000});
+onlyRoomPoolSaunaCanelo.push({name: "Canelo Suite", type: "2 WEEKS", price: 13000});
+onlyRoomPoolSaunaCanelo.push({name: "Canelo Suite", type: "1 MONTH", price: 20000});
+
+$("#room-pool-sauna-canelo").on("click", function() {
+	changePackage(this, 'canelo', 'Room +Pool & Sauna', onlyRoomPoolSaunaCanelo);
+});
+
+/************************
+ * Next Tab
+ * Room and Workouts third tab on wards
+ */
+var roomWorkoutsTyson = [];
+roomWorkoutsTyson.push({name: "Tyson Suite", type: "1 WEEK", price: 11000});
+roomWorkoutsTyson.push({name: "Tyson Suite", type: "2 WEEKS", price: 21000});
+roomWorkoutsTyson.push({name: "Tyson Suite", type: "1 MONTH", price: 40000});
+roomWorkoutsTyson.push({name: "Tyson Suite", type: "3 MONTHS", price: 114000});
+
+$("#room-workouts-tyson").on("click", function() {
+	changePackage(this, 'tyson', 'Room +Workouts', roomWorkoutsTyson);
+});
+
+var roomWorkoutsCrawford = [];
+roomWorkoutsCrawford.push({name: "Crawford Suite", type: "1 WEEK", price: 10500});
+roomWorkoutsCrawford.push({name: "Crawford Suite", type: "2 WEEKS", price: 20000});
+roomWorkoutsCrawford.push({name: "Crawford Suite", type: "1 MONTH", price: 36000});
+roomWorkoutsCrawford.push({name: "Crawford Suite", type: "3 MONTHS", price: 102000});
+
+$("#room-workouts-crawford").on("click", function() {
+	changePackage(this, 'crawford', 'Room +Workouts', roomWorkoutsCrawford);
+});
+
+var roomWorkoutsCanelo = [];
+roomWorkoutsCanelo.push({name: "Canelo Suite", type: "1 WEEK", price: 10000});
+roomWorkoutsCanelo.push({name: "Canelo Suite", type: "2 WEEKS", price: 19000});
+roomWorkoutsCanelo.push({name: "Canelo Suite", type: "1 MONTH", price: 34000});
+roomWorkoutsCanelo.push({name: "Canelo Suite", type: "3 MONTHS", price: 96000});
+
+$("#room-workouts-canelo").on("click", function() {
+	changePackage(this, 'canelo', 'Room +Workouts', roomWorkoutsCanelo);
 });
 
 
-$("#all-room-tyson").magnificPopup({
-  items: {
-      src: '#tyson-suite-modal',
-      type: 'inline'
-  }
-});
+/*********************
+ * Next Tab
+ * Fourth tab ALL Room +Workouts +Pool & Sauna
+ */
 
 var allTyson = [];
 allTyson.push({name: "Tyson Suite", type: "1 WEEK", price: 11500});
@@ -63,35 +132,7 @@ allTyson.push({name: "Tyson Suite",  type: "1 MONTH", price: 42000});
 allTyson.push({name: "Tyson Suite",  type: "3 MONTHS", price: 118000});
 
 $('#all-room-tyson').on("click", function() {
-	changePackage(this, 'tyson', 'Room + All workouts are included + sauna', allTyson);
-});
-
-//crawford popup
-
-$('#room-sauna-crawford').magnificPopup({
-  items: {
-      src: '#crawford-deluxe-modal',
-      type: 'inline'
-  }
-});
-
-var roomSaunaCrawford = [];
-roomSaunaCrawford.push({name: "Crawford Suite", type: "1 DAY", price: 1200});
-roomSaunaCrawford.push({name: "Crawford Suite", type: "1 WEEK", price: 7500});
-roomSaunaCrawford.push({name: "Crawford Suite", type: "2 WEEKS", price: 14000});
-roomSaunaCrawford.push({name: "Crawford Suite",  type: "1 MONTH", price: 22000});
-
-$('#room-sauna-crawford').on("click", function() {
-	changePackage(this, 'crawford', 'Room + sauna', roomSaunaCrawford);
-});
-
-// all room crawford
-
-$('#all-room-crawford').magnificPopup({
-  items: {
-      src: '#crawford-deluxe-modal',
-      type: 'inline'
-  }
+	changePackage(this, 'tyson', 'Room +Workouts +Poll & Sauna', allTyson);
 });
 
 var allCrawford = [];
@@ -101,43 +142,22 @@ allCrawford.push({name: "Crawford Suite",  type: "1 MONTH", price: 38000});
 allCrawford.push({name: "Crawford Suite",  type: "3 MONTHS", price: 10600});
 
 $('#all-room-crawford').on("click", function() {
-	changePackage(this, 'crawford', 'Room + All workouts are included + sauna', allCrawford);
-});
-
-//canelo popup
-$('#room-sauna-canelo').magnificPopup({
-  items: {
-      src: '#canelo-double-modal',
-      type: 'inline'
-  }
-});
-
-var roomSaunaCanelo = [];
-roomSaunaCanelo.push({name: "Canelo Suite", type: "1 DAY", price: 1100});
-roomSaunaCanelo.push({name: "Canelo Suite", type: "1 WEEK", price: 7000});
-roomSaunaCanelo.push({name: "Canelo Suite", type: "2 WEEKS", price: 13000});
-roomSaunaCanelo.push({name: "Canelo Suite",  type: "1 MONTH", price: 20000});
-
-$('#room-sauna-canelo').on("click", function() {
-	changePackage(this, 'canelo', 'Room + sauna', roomSaunaCanelo);
-});
-
-$('#all-room-canelo').magnificPopup({
-  items: {
-      src: '#canelo-double-modal',
-      type: 'inline'
-  }
+	changePackage(this, 'crawford', 'Room +Workouts +Poll & Sauna', allCrawford);
 });
 
 var allCanelo = [];
 allCanelo.push({name: "Canelo Suite", type: "1 WEEK", price: 10500});
 allCanelo.push({name: "Canelo Suite", type: "2 WEEKS", price: 20000});
 allCanelo.push({name: "Canelo Suite",  type: "1 MONTH", price: 36000});
-allCanelo.push({name: "Canelo Suite",  type: "3 MONTHS", price: 100000});
+allCanelo.push({name: "Canelo Suite",  type: "3 MONTHS", price: 110000});
 
 $('#all-room-canelo').on("click", function() {
-	changePackage(this, 'canelo', 'Room + All workouts are included + sauna', allCanelo);
+	changePackage(this, 'canelo', 'Room +Workouts +Poll & Sauna', allCanelo);
 });
+
+/*********
+ * Common functions
+ */
 
 function changePackage(objThis, roomType, accommodationType, items) {
 	let formType = $(objThis).attr("formType");
