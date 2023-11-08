@@ -1,3 +1,8 @@
+//V1.1.1
+// https://cdn.jsdelivr.net/gh/somshine/DMS/
+//<script src="https://cdn.jsdelivr.net/gh/somshine/DMS@61ba31e9743c7f3497a35e5d915f5fb8c8931e5c/packages.js" data-use-service-core defer></script>
+//<script src="https://cdn.jsdelivr.net/gh/somshine/DMS@master/accommodation.js" data-use-service-core defer></script>
+
 var accommodationType = $('#inclusive-accommodation-first').val();
 var fitnessPackage = $('#inclusive-fitness-packages :selected').text();
 var timeType = $('#inclusive-packages-time :selected').text();
