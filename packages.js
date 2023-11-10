@@ -1,77 +1,99 @@
-//V1.1.25
-//https://cdn.jsdelivr.net/gh/somshine/DMS/
+//V1.1.26
+// https://cdn.jsdelivr.net/gh/somshine/DMS/
 //<script src="https://cdn.jsdelivr.net/gh/somshine/DMS@61ba31e9743c7f3497a35e5d915f5fb8c8931e5c/packages.js" data-use-service-core defer></script>
 //<script src="https://cdn.jsdelivr.net/gh/somshine/DMS@master/accommodation.js" data-use-service-core defer></script>
 
 var linkMapping = [];
 var packageLink = "";
 
-linkMapping.push({linkId: "https://buy.stripe.com/cN2bKi1fRgxk4o007r", packageName: "Training Only Options - Striking Factory (all striking classes) - 1 Week"});
-linkMapping.push({linkId: "https://buy.stripe.com/9AQ3dM6AbgxkdYAbQa", packageName: "Training Only Options - Striking Factory (all striking classes) - 2 Week"});
-linkMapping.push({linkId: "https://buy.stripe.com/cN28y6cYz80O3jW9I3", packageName: "Training Only Options - Striking Factory (all striking classes) - 1 Month"});
-linkMapping.push({linkId: "https://buy.stripe.com/14k8y6f6H3Ky07K9I4", packageName: "Training Only Options - Striking Factory (all striking classes) - Muay Thai - 1 Week"});
-linkMapping.push({linkId: "https://buy.stripe.com/8wM01Ae2Dch48Eg7zX", packageName: "Training Only Options - Striking Factory (all striking classes) - Muay Thai - 1 Week - 1 Session"});
-linkMapping.push({linkId: "https://buy.stripe.com/5kA3dM3nZbd0g6I2fE", packageName: "Training Only Options - Striking Factory (all striking classes) - Muay Thai - 1 Week - 5 Sessions"});
-linkMapping.push({linkId: "https://buy.stripe.com/7sI3dM8Ij4OCdYAdYn", packageName: "Training Only Options - Striking Factory (all striking classes) - Muay Thai - 1 Week - 10 Sessions"});
-linkMapping.push({linkId: "https://buy.stripe.com/aEU8y68Ij5SG07KcUk", packageName: "Training Only Options - Striking Factory (all striking classes) - Muay Thai - 2 Week"});
-linkMapping.push({linkId: "https://buy.stripe.com/9AQ3dMf6H80ObQs5rT", packageName: "Training Only Options - Striking Factory (all striking classes) - Muay Thai - 2 Week - 1 Session"});
-linkMapping.push({linkId: "https://buy.stripe.com/5kA15EbUv6WK8EgcUm", packageName: "Training Only Options - Striking Factory (all striking classes) - Muay Thai - 2 Week - 5 Sessions"});
-linkMapping.push({linkId: "https://buy.stripe.com/14k8y62jV94Sf2E07B", packageName: "Training Only Options - Striking Factory (all striking classes) - Muay Thai - 2 Week - 10 Sessions"});
-linkMapping.push({linkId: "https://buy.stripe.com/eVag0y0bN4OCdYA07C", packageName: "Training Only Options - Striking Factory (all striking classes) - Muay Thai - 1 Month"});
-linkMapping.push({linkId: "https://buy.stripe.com/eVa9Cae2D80OaMo5rX", packageName: "Training Only Options - Striking Factory (all striking classes) - Muay Thai - 1 Month - 1 Session"});
-linkMapping.push({linkId: "https://buy.stripe.com/eVa9Ca9Mn1CqaMog6C", packageName: "Training Only Options - Striking Factory (all striking classes) - Muay Thai - 1 Month - 5 Sessions"});
-linkMapping.push({linkId: "https://buy.stripe.com/aEUaGe6Abch4g6I9If", packageName: "Training Only Options - Striking Factory (all striking classes) - Muay Thai - 1 Month - 10 Sessions"});
-linkMapping.push({linkId: "https://buy.stripe.com/8wM3dMaQrftg4o0bQo", packageName: "Training Only Options - Striking Factory (all striking classes) - Striking - 1 Week"});
-linkMapping.push({linkId: "https://buy.stripe.com/14kg0y2jVa8WcUwf2B", packageName: "Training Only Options - Striking Factory (all striking classes) - Striking - 1 Week - 1 Session"});
-linkMapping.push({linkId: "https://buy.stripe.com/dR6aGeaQr1CqcUw7Aa", packageName: "Training Only Options - Striking Factory (all striking classes) - Striking - 1 Week - 5 Sessions"});
-linkMapping.push({linkId: "https://buy.stripe.com/5kA3dM5w7ch4aMo07J", packageName: "Training Only Options - Striking Factory (all striking classes) - Striking - 1 Week - 10 Sessions"});
-linkMapping.push({linkId: "https://buy.stripe.com/7sIbKi5w71Cq9IkbQs", packageName: "Training Only Options - Striking Factory (all striking classes) - Striking - 2 Week"});
-linkMapping.push({linkId: "https://buy.stripe.com/6oEaGe8Ij0ym07Kg6J", packageName: "Training Only Options - Striking Factory (all striking classes) - Striking - 2 Week - 1 Session"});
-linkMapping.push({linkId: "https://buy.stripe.com/5kA6pY0bN4OCcUwf2G", packageName: "Training Only Options - Striking Factory (all striking classes) - Striking - 2 Week - 5 Sessions"});
-linkMapping.push({linkId: "https://buy.stripe.com/4gw7u2bUv6WKdYAbQv", packageName: "Training Only Options - Striking Factory (all striking classes) - Striking - 2 Week - 10 Sessions"});
-linkMapping.push({linkId: "https://buy.stripe.com/9AQ5lUe2Dftgf2E7Ag", packageName: "Training Only Options - Striking Factory (all striking classes) - Striking - 1 Month"});
-linkMapping.push({linkId: "https://buy.stripe.com/3csbKi7Efa8W5s49Ip", packageName: "Training Only Options - Striking Factory (all striking classes) - Striking - 1 Month - 1 Session"});
-linkMapping.push({linkId: "https://buy.stripe.com/dR6aGe2jVbd02fS4o6", packageName: "Training Only Options - Striking Factory (all striking classes) - Striking - 1 Month - 5 Sessions"});
-linkMapping.push({linkId: "https://buy.stripe.com/8wMcOmaQr3Ky07Kf2L", packageName: "Training Only Options - Striking Factory (all striking classes) - Striking - 1 Month - 10 Sessions"});
-linkMapping.push({linkId: "https://buy.stripe.com/fZeg0yaQrgxk8Eg3k4", packageName: "Training Only Options - Striking Factory (all striking classes) - Western Boxing - 1 Week"});
-linkMapping.push({linkId: "https://buy.stripe.com/3csaGeaQr3Ky7Ac07T", packageName: "Training Only Options - Striking Factory (all striking classes) - Western Boxing - 1 Week - 1 Session"});
-linkMapping.push({linkId: "https://buy.stripe.com/cN201A0bNbd0bQsbQC", packageName: "Training Only Options - Striking Factory (all striking classes) - Western Boxing - 1 Week - 5 Sessions"});
-linkMapping.push({linkId: "https://buy.stripe.com/4gw5lU1fR80O1bO1bZ", packageName: "Training Only Options - Striking Factory (all striking classes) - Western Boxing - 1 Week - 10 Sessions"});
-linkMapping.push({linkId: "https://buy.stripe.com/8wMg0y9Mnbd0dYAbQE", packageName: "Training Only Options - Striking Factory (all striking classes) - Western Boxing - 2 Week"});
-linkMapping.push({linkId: "https://buy.stripe.com/fZe4hQ8Ij4OCdYAf2R", packageName: "Training Only Options - Striking Factory (all striking classes) - Western Boxing - 2 Week - 1 Session"});
-linkMapping.push({linkId: "https://buy.stripe.com/cN2bKi5w76WK7Acf2S", packageName: "Training Only Options - Striking Factory (all striking classes) - Western Boxing - 2 Week - 5 Sessions"});
-linkMapping.push({linkId: "https://buy.stripe.com/cN215EcYz1Cqf2E9Iz", packageName: "Training Only Options - Striking Factory (all striking classes) - Western Boxing - 2 Week - 10 Sessions"});
-linkMapping.push({linkId: "https://buy.stripe.com/eVa5lU4s36WK4o0g6Y", packageName: "Training Only Options - Striking Factory (all striking classes) - Western Boxing - 1 Month"});
-linkMapping.push({linkId: "https://buy.stripe.com/fZe6pY3nZ80O8Eg8Ex", packageName: "Training Only Options - Striking Factory (all striking classes) - Western Boxing - 1 Month - 1 Session"});
-linkMapping.push({linkId: "https://buy.stripe.com/cN2aGe9Mn80O8Eg6wq", packageName: "Training Only Options - Striking Factory (all striking classes) - Western Boxing - 1 Month - 5 Sessions"});
-linkMapping.push({linkId: "https://buy.stripe.com/5kA9Ca8Ij0ymcUw3kf", packageName: "Training Only Options - Striking Factory (all striking classes) - Western Boxing - 1 Month - 10 Sessions"});
-linkMapping.push({linkId: "https://buy.stripe.com/aEU3dMe2Dgxkf2E4ok", packageName: "Training Only Options - Striking Factory (all striking classes) - S&C - 1 Week"});
-linkMapping.push({linkId: "https://buy.stripe.com/3csdSq4s3ftg1bO3kh", packageName: "Training Only Options - Striking Factory (all striking classes) - S&C - 1 Week - 1 Session"});
-linkMapping.push({linkId: "https://buy.stripe.com/14k15E1fR1Cq3jWaMK", packageName: "Training Only Options - Striking Factory (all striking classes) - S&C - 1 Week - 5 Sessions"});
-linkMapping.push({linkId: "https://buy.stripe.com/4gwaGebUv94SaMo7Az", packageName: "Training Only Options - Striking Factory (all striking classes) - S&C - 1 Week - 10 Sessions"});
-linkMapping.push({linkId: "https://buy.stripe.com/6oEdSq1fRftgdYA2gg", packageName: "Training Only Options - Striking Factory (all striking classes) - S&C - 2 Week"});
-linkMapping.push({linkId: "https://buy.stripe.com/4gwcOm9Mn3Kyf2E089", packageName: "Training Only Options - Striking Factory (all striking classes) - S&C - 2 Week - 1 Session"});
-linkMapping.push({linkId: "https://buy.stripe.com/6oE15EcYzftgaMo5su", packageName: "Training Only Options - Striking Factory (all striking classes) - S&C - 2 Week - 5 Sessions"});
-linkMapping.push({linkId: "https://buy.stripe.com/8wM4hQbUv3Kyg6Ig79", packageName: "Training Only Options - Striking Factory (all striking classes) - S&C - 2 Week - 10 Sessions"});
-linkMapping.push({linkId: "https://buy.stripe.com/dR6aGe5w7epc4o0cUY", packageName: "Training Only Options - Striking Factory (all striking classes) - S&C - 1 Month"});
-linkMapping.push({linkId: "https://buy.stripe.com/aEU9CabUv80OdYA9IN", packageName: "Training Only Options - Striking Factory (all striking classes) - S&C - 1 Month - 1 Session"});
-linkMapping.push({linkId: "https://buy.stripe.com/aEU01A2jVbd08EgbQW", packageName: "Training Only Options - Striking Factory (all striking classes) - S&C - 1 Month - 5 Sessions"});
-linkMapping.push({linkId: "https://buy.stripe.com/eVacOm4s3epcbQs6wD", packageName: "Training Only Options - Striking Factory (all striking classes) - S&C - 1 Month - 10 Sessions"});
-linkMapping.push({linkId: "https://buy.stripe.com/3cs4hQ7Ef6WK2fS8EM", packageName: "Training Only Options - Striking Factory (all striking classes) - S&C - Kobes - 1 Week"});
-linkMapping.push({linkId: "https://buy.stripe.com/3cs3dMbUv1Cq3jW08h", packageName: "Training Only Options - Striking Factory (all striking classes) - S&C - Kobes - 1 Week - 1 Session"});
-linkMapping.push({linkId: "https://buy.stripe.com/cN215E4s34OC6w84oy", packageName: "Training Only Options - Striking Factory (all striking classes) - S&C - Kobes - 1 Week - 5 Sessions"});
-linkMapping.push({linkId: "https://buy.stripe.com/dR63dMbUvepcbQs6wH", packageName: "Training Only Options - Striking Factory (all striking classes) - S&C - Kobes - 1 Week - 10 Sessions"});
-linkMapping.push({linkId: "https://buy.stripe.com/4gwg0y5w780OdYAdZa", packageName: "Training Only Options - Striking Factory (all striking classes) - S&C - Kobes - 2 Week"});
-linkMapping.push({linkId: "https://buy.stripe.com/eVa15EbUv80ObQs7AN", packageName: "Training Only Options - Striking Factory (all striking classes) - S&C - Kobes - 2 Week - 1 Session"});
-linkMapping.push({linkId: "https://buy.stripe.com/28o7u28Ijftg3jW2gu", packageName: "Training Only Options - Striking Factory (all striking classes) - S&C - Kobes - 2 Week - 5 Sessions"});
-linkMapping.push({linkId: "https://buy.stripe.com/aEUeWu4s380O07KbR5", packageName: "Training Only Options - Striking Factory (all striking classes) - S&C - Kobes - 2 Week - 10 Sessions"});
-linkMapping.push({linkId: "https://buy.stripe.com/00gcOme2D5SG8EgdZe", packageName: "Training Only Options - Striking Factory (all striking classes) - S&C - Kobes - 1 Month"});
-linkMapping.push({linkId: "https://buy.stripe.com/14k01Ae2D94S4o08EV", packageName: "Training Only Options - Striking Factory (all striking classes) - S&C - Kobes - 1 Month - 1 Session"});
-linkMapping.push({linkId: "https://buy.stripe.com/28o8y6gaL1Cq3jW1cu", packageName: "Training Only Options - Striking Factory (all striking classes) - S&C - Kobes - 1 Month - 5 Sessions"});
-linkMapping.push({linkId: "https://buy.stripe.com/aEU8y61fRdl82fSg7p", packageName: "Training Only Options - Striking Factory (all striking classes) - S&C - Kobes - 1 Month - 10 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/cN2bKi1fRgxk4o007r", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - 1 Week"});
+linkMapping.push({linkId: "https://buy.stripe.com/9AQ3dM6AbgxkdYAbQa", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - 2 Week"});
+linkMapping.push({linkId: "https://buy.stripe.com/cN28y6cYz80O3jW9I3", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - 1 Month"});
+linkMapping.push({linkId: "https://buy.stripe.com/eVacOm1fR6WK1bO6yV", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - 3 Months"});
+linkMapping.push({linkId: "https://buy.stripe.com/14k8y6f6H3Ky07K9I4", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - Muay Thai - 1 Week"});
+linkMapping.push({linkId: "https://buy.stripe.com/8wM01Ae2Dch48Eg7zX", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - Muay Thai - 1 Week - 1 Session"});
+linkMapping.push({linkId: "https://buy.stripe.com/5kA3dM3nZbd0g6I2fE", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - Muay Thai - 1 Week - 5 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/7sI3dM8Ij4OCdYAdYn", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - Muay Thai - 1 Week - 10 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/aEU8y68Ij5SG07KcUk", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - Muay Thai - 2 Week"});
+linkMapping.push({linkId: "https://buy.stripe.com/9AQ3dMf6H80ObQs5rT", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - Muay Thai - 2 Week - 1 Session"});
+linkMapping.push({linkId: "https://buy.stripe.com/5kA15EbUv6WK8EgcUm", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - Muay Thai - 2 Week - 5 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/14k8y62jV94Sf2E07B", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - Muay Thai - 2 Week - 10 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/eVag0y0bN4OCdYA07C", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - Muay Thai - 1 Month"});
+linkMapping.push({linkId: "https://buy.stripe.com/eVa9Cae2D80OaMo5rX", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - Muay Thai - 1 Month - 1 Session"});
+linkMapping.push({linkId: "https://buy.stripe.com/eVa9Ca9Mn1CqaMog6C", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - Muay Thai - 1 Month - 5 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/aEUaGe6Abch4g6I9If", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - Muay Thai - 1 Month - 10 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/eVa7u25w76WKf2EcXk", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - Muay Thai - 3 Months"});
+linkMapping.push({linkId: "https://buy.stripe.com/9AQ8y6bUv2Gu4o01eD", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - Muay Thai - 3 Months - 1 Session"});
+linkMapping.push({linkId: "https://buy.stripe.com/8wMeWue2Dch48Eg4qQ", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - Muay Thai - 3 Months - 5 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/7sIg0y1fR6WK6w89Lb", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - Muay Thai - 3 Months - 10 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/8wM3dMaQrftg4o0bQo", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - Kickboxing - 1 Week"});
+linkMapping.push({linkId: "https://buy.stripe.com/14kg0y2jVa8WcUwf2B", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - Kickboxing - 1 Week - 1 Session"});
+linkMapping.push({linkId: "https://buy.stripe.com/dR6aGeaQr1CqcUw7Aa", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - Kickboxing - 1 Week - 5 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/5kA3dM5w7ch4aMo07J", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - Kickboxing - 1 Week - 10 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/7sIbKi5w71Cq9IkbQs", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - Kickboxing - 2 Week"});
+linkMapping.push({linkId: "https://buy.stripe.com/6oEaGe8Ij0ym07Kg6J", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - Kickboxing - 2 Week - 1 Session"});
+linkMapping.push({linkId: "https://buy.stripe.com/5kA6pY0bN4OCcUwf2G", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - Kickboxing - 2 Week - 5 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/4gw7u2bUv6WKdYAbQv", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - Kickboxing - 2 Week - 10 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/9AQ5lUe2Dftgf2E7Ag", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - Kickboxing - 1 Month"});
+linkMapping.push({linkId: "https://buy.stripe.com/3csbKi7Efa8W5s49Ip", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - Kickboxing - 1 Month - 1 Session"});
+linkMapping.push({linkId: "https://buy.stripe.com/5kAdSq0bNepc2fS1ey", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - Kickboxing - 1 Month - 5 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/4gwaGe0bN2GucUw5uP", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - Kickboxing - 1 Month - 10 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/7sI29I8Ij5SG6w8cXo", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - Kickboxing - 3 Months"});
+linkMapping.push({linkId: "https://buy.stripe.com/3cs29I5w74OC8Eg4qT", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - Kickboxing - 3 Months - 1 Session"});
+linkMapping.push({linkId: "https://buy.stripe.com/28o9Cae2D4OCg6Ie1u", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - Kickboxing - 3 Months - 5 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/bIY01A1fRch407Ke1v", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - Kickboxing - 3 Months - 10 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/fZeg0yaQrgxk8Eg3k4", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - Western Boxing - 1 Week"});
+linkMapping.push({linkId: "https://buy.stripe.com/3csaGeaQr3Ky7Ac07T", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - Western Boxing - 1 Week - 1 Session"});
+linkMapping.push({linkId: "https://buy.stripe.com/cN201A0bNbd0bQsbQC", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - Western Boxing - 1 Week - 5 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/4gw5lU1fR80O1bO1bZ", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - Western Boxing - 1 Week - 10 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/8wMg0y9Mnbd0dYAbQE", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - Western Boxing - 2 Week"});
+linkMapping.push({linkId: "https://buy.stripe.com/fZe4hQ8Ij4OCdYAf2R", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - Western Boxing - 2 Week - 1 Session"});
+linkMapping.push({linkId: "https://buy.stripe.com/cN2bKi5w76WK7Acf2S", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - Western Boxing - 2 Week - 5 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/cN215EcYz1Cqf2E9Iz", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - Western Boxing - 2 Week - 10 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/eVa5lU4s36WK4o0g6Y", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - Western Boxing - 1 Month"});
+linkMapping.push({linkId: "https://buy.stripe.com/fZe6pY3nZ80O8Eg8Ex", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - Western Boxing - 1 Month - 1 Session"});
+linkMapping.push({linkId: "https://buy.stripe.com/cN2aGe9Mn80O8Eg6wq", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - Western Boxing - 1 Month - 5 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/5kA9Ca8Ij0ymcUw3kf", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - Western Boxing - 1 Month - 10 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/dR6dSqaQr1Cqg6I8Hc", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - Western Boxing - 3 Months"});
+linkMapping.push({linkId: "https://buy.stripe.com/fZe3dM5w75SG9Ik9Lh", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - Western Boxing - 3 Months - 1 Session"});
+linkMapping.push({linkId: "https://buy.stripe.com/cN2eWu6Abepc5s4e1y", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - Western Boxing - 3 Months - 5 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/fZe9Ca4s33Ky5s49Lj", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - Western Boxing - 3 Months - 10 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/aEU3dMe2Dgxkf2E4ok", packageName: "Training Only Options - Striking Factory (Select Your Weapon) – S&C - 1 Week"});
+linkMapping.push({linkId: "https://buy.stripe.com/3csdSq4s3ftg1bO3kh", packageName: "Training Only Options - Striking Factory (Select Your Weapon) – S&C - 1 Week - 1 Session"});
+linkMapping.push({linkId: "https://buy.stripe.com/14k15E1fR1Cq3jWaMK", packageName: "Training Only Options - Striking Factory (Select Your Weapon) – S&C - 1 Week - 5 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/4gwaGebUv94SaMo7Az", packageName: "Training Only Options - Striking Factory (Select Your Weapon) – S&C - 1 Week - 10 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/6oEdSq1fRftgdYA2gg", packageName: "Training Only Options - Striking Factory (Select Your Weapon) – S&C - 2 Week"});
+linkMapping.push({linkId: "https://buy.stripe.com/4gwcOm9Mn3Kyf2E089", packageName: "Training Only Options - Striking Factory (Select Your Weapon) – S&C - 2 Week - 1 Session"});
+linkMapping.push({linkId: "https://buy.stripe.com/6oE15EcYzftgaMo5su", packageName: "Training Only Options - Striking Factory (Select Your Weapon) – S&C - 2 Week - 5 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/8wM4hQbUv3Kyg6Ig79", packageName: "Training Only Options - Striking Factory (Select Your Weapon) – S&C - 2 Week - 10 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/dR6aGe5w7epc4o0cUY", packageName: "Training Only Options - Striking Factory (Select Your Weapon) – S&C - 1 Month"});
+linkMapping.push({linkId: "https://buy.stripe.com/aEU9CabUv80OdYA9IN", packageName: "Training Only Options - Striking Factory (Select Your Weapon) – S&C - 1 Month - 1 Session"});
+linkMapping.push({linkId: "https://buy.stripe.com/aEU01A2jVbd08EgbQW", packageName: "Training Only Options - Striking Factory (Select Your Weapon) – S&C - 1 Month - 5 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/eVacOm4s3epcbQs6wD", packageName: "Training Only Options - Striking Factory (Select Your Weapon) – S&C - 1 Month - 10 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/7sI8y6cYzepcdYA0aK", packageName: "Training Only Options - Striking Factory (Select Your Weapon) – S&C - 3 Months"});
+linkMapping.push({linkId: "https://buy.stripe.com/dR68y63nZ1Cq9Ik4r1", packageName: "Training Only Options - Striking Factory (Select Your Weapon) – S&C - 3 Months - 1 Session"});
+linkMapping.push({linkId: "https://buy.stripe.com/bIYaGee2Dbd0bQsg9K", packageName: "Training Only Options - Striking Factory (Select Your Weapon) – S&C - 3 Months - 5 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/4gwdSq3nZ0ym3jW1eR", packageName: "Training Only Options - Striking Factory (Select Your Weapon) – S&C - 3 Months - 10 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/3cs4hQ7Ef6WK2fS8EM", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - S&C - Kobes - 1 Week"});
+linkMapping.push({linkId: "https://buy.stripe.com/3cs3dMbUv1Cq3jW08h", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - S&C - Kobes - 1 Week - 1 Session"});
+linkMapping.push({linkId: "https://buy.stripe.com/cN215E4s34OC6w84oy", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - S&C - Kobes - 1 Week - 5 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/dR63dMbUvepcbQs6wH", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - S&C - Kobes - 1 Week - 10 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/4gwg0y5w780OdYAdZa", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - S&C - Kobes - 2 Week"});
+linkMapping.push({linkId: "https://buy.stripe.com/eVa15EbUv80ObQs7AN", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - S&C - Kobes - 2 Week - 1 Session"});
+linkMapping.push({linkId: "https://buy.stripe.com/28o7u28Ijftg3jW2gu", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - S&C - Kobes - 2 Week - 5 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/aEUeWu4s380O07KbR5", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - S&C - Kobes - 2 Week - 10 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/00gcOme2D5SG8EgdZe", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - S&C - Kobes - 1 Month"});
+linkMapping.push({linkId: "https://buy.stripe.com/14k01Ae2D94S4o08EV", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - S&C - Kobes - 1 Month - 1 Session"});
+linkMapping.push({linkId: "https://buy.stripe.com/28o8y6gaL1Cq3jW1cu", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - S&C - Kobes - 1 Month - 5 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/aEU8y61fRdl82fSg7p", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - S&C - Kobes - 1 Month - 10 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/fZe5lUcYza8W5s40aO", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - S&C - Kobes - 3 Months"});
+linkMapping.push({linkId: "https://buy.stripe.com/4gw3dM0bNa8W6w80aP", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - S&C - Kobes - 3 Months - 1 Session"});
+linkMapping.push({linkId: "https://buy.stripe.com/3cs4hQcYz0ymcUwbTy", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - S&C - Kobes - 3 Months - 5 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/bIY01Af6H1Cq8EgcXD", packageName: "Training Only Options - Striking Factory (Select Your Weapon) - S&C - Kobes - 3 Months - 10 Sessions"});
 linkMapping.push({linkId: "https://buy.stripe.com/6oE8y67Efa8Wf2E9J2", packageName: "Training Only Options - Athlete Factory (all S&C classes) - 1 Week"});
 linkMapping.push({linkId: "https://buy.stripe.com/eVa4hQaQrgxk4o06wR", packageName: "Training Only Options - Athlete Factory (all S&C classes) - 2 Week"});
 linkMapping.push({linkId: "https://buy.stripe.com/5kAeWu8Ij2GuaMo7AW", packageName: "Training Only Options - Athlete Factory (all S&C classes) - 1 Month"});
+linkMapping.push({linkId: "https://buy.stripe.com/6oE3dM6Ab1CqaMoe1I", packageName: "Training Only Options - Athlete Factory (all S&C classes) - 3 Months"});
 linkMapping.push({linkId: "https://buy.stripe.com/eVa5lU2jVftg8EgbRd", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Muay Thai - 1 Week"});
 linkMapping.push({linkId: "https://buy.stripe.com/8wM9Ca0bNftg1bO4oM", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Muay Thai - 1 Week - 1 Session"});
 linkMapping.push({linkId: "https://buy.stripe.com/dR66pY2jV2GudYA9J7", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Muay Thai - 1 Week - 5 Sessions"});
@@ -84,6 +106,10 @@ linkMapping.push({linkId: "https://buy.stripe.com/bIYdSq1fRepc1bO08D", packageNa
 linkMapping.push({linkId: "https://buy.stripe.com/3cs01Ae2D4OC7AcaNi", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Muay Thai - 1 Month - 1 Session"});
 linkMapping.push({linkId: "https://buy.stripe.com/28og0y6Abgxk9Ik3kR", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Muay Thai - 1 Month - 5 Sessions"});
 linkMapping.push({linkId: "https://buy.stripe.com/7sIcOm9Mn5SG6w808G", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Muay Thai - 1 Month - 10 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/8wMeWu2jVdl83jWe1J", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Muay Thai - 3 Months"});
+linkMapping.push({linkId: "https://buy.stripe.com/7sI15E7Efch41bO2j2", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Muay Thai - 3 Months - 1 Session"});
+linkMapping.push({linkId: "https://buy.stripe.com/cN25lUaQrftg07K7Dn", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Muay Thai - 3 Months - 5 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/9AQeWugaLgxkf2Ee1M", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Muay Thai - 3 Months - 10 Sessions"});
 linkMapping.push({linkId: "https://buy.stripe.com/4gw7u2cYz1CqdYA6x5", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Western Boxing - 1 Week"});
 linkMapping.push({linkId: "https://buy.stripe.com/cN2cOmaQr1CqcUw9Ji", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Western Boxing - 1 Week - 1 Session"});
 linkMapping.push({linkId: "https://buy.stripe.com/7sI9CagaL5SG1bO6x7", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Western Boxing - 1 Week - 5 Sessions"});
@@ -96,18 +122,26 @@ linkMapping.push({linkId: "https://buy.stripe.com/5kAg0y6Ab3Ky4o06xd", packageNa
 linkMapping.push({linkId: "https://buy.stripe.com/5kA3dM1fR0ymdYA5ta", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Western Boxing - 1 Month - 1 Session"});
 linkMapping.push({linkId: "https://buy.stripe.com/6oEbKi8Ij2Gu2fScVD", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Western Boxing - 1 Month - 5 Sessions"});
 linkMapping.push({linkId: "https://buy.stripe.com/8wM8y6bUvgxk5s4f3M", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Western Boxing - 1 Month - 10 Sessions"});
-linkMapping.push({linkId: "https://buy.stripe.com/28o8y6cYz2Gu6w82h1", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Striking - 1 Week"});
-linkMapping.push({linkId: "https://buy.stripe.com/cN2cOmf6H2GubQsdZK", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Striking - 1 Week - 1 Session"});
-linkMapping.push({linkId: "https://buy.stripe.com/7sI6pY9Mnbd007KdZL", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Striking - 1 Week - 5 Sessions"});
-linkMapping.push({linkId: "https://buy.stripe.com/aEUg0y0bNch4dYA7Bo", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Striking - 1 Week - 10 Sessions"});
-linkMapping.push({linkId: "https://buy.stripe.com/aEU01A6Abch42fS8Ft", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Striking - 2 Week"});
-linkMapping.push({linkId: "https://buy.stripe.com/3cs8y6cYzgxkaMo4pe", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Striking - 2 Week - 1 Session"});
-linkMapping.push({linkId: "https://buy.stripe.com/6oE9Ca0bNch42fS4pf", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Striking - 2 Week - 5 Sessions"});
-linkMapping.push({linkId: "https://buy.stripe.com/5kA3dMf6H0ym3jWf3U", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Striking - 2 Week - 10 Sessions"});
-linkMapping.push({linkId: "https://buy.stripe.com/4gw4hQf6Hftg3jW8Fx", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Striking - 1 Month"});
-linkMapping.push({linkId: "https://buy.stripe.com/fZe7u23nZch44o0dZS", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Striking - 1 Month - 1 Session"});
-linkMapping.push({linkId: "https://buy.stripe.com/00gcOm2jVdl88Egf3X", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Striking - 1 Month - 5 Sessions"});
-linkMapping.push({linkId: "https://buy.stripe.com/5kA7u25w794S5s44pk", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Striking - 1 Month - 10 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/3csaGe8Ij94S5s4f5R", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Western Boxing - 3 Months"});
+linkMapping.push({linkId: "https://buy.stripe.com/7sIdSqaQr0ym6w8aPC", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Western Boxing - 3 Months - 1 Session"});
+linkMapping.push({linkId: "https://buy.stripe.com/eVag0y5w7gxk3jWbTH", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Western Boxing - 3 Months - 5 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/4gwaGe7Ef4OC2fS1f4", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Western Boxing - 3 Months - 10 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/28o8y6cYz2Gu6w82h1", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Kickboxing - 1 Week"});
+linkMapping.push({linkId: "https://buy.stripe.com/cN2cOmf6H2GubQsdZK", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Kickboxing - 1 Week - 1 Session"});
+linkMapping.push({linkId: "https://buy.stripe.com/7sI6pY9Mnbd007KdZL", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Kickboxing - 1 Week - 5 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/aEUg0y0bNch4dYA7Bo", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Kickboxing - 1 Week - 10 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/aEU01A6Abch42fS8Ft", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Kickboxing - 2 Week"});
+linkMapping.push({linkId: "https://buy.stripe.com/3cs8y6cYzgxkaMo4pe", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Kickboxing - 2 Week - 1 Session"});
+linkMapping.push({linkId: "https://buy.stripe.com/6oE9Ca0bNch42fS4pf", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Kickboxing - 2 Week - 5 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/5kA3dMf6H0ym3jWf3U", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Kickboxing - 2 Week - 10 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/4gw4hQf6Hftg3jW8Fx", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Kickboxing - 1 Month"});
+linkMapping.push({linkId: "https://buy.stripe.com/fZe7u23nZch44o0dZS", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Kickboxing - 1 Month - 1 Session"});
+linkMapping.push({linkId: "https://buy.stripe.com/00gcOm2jVdl88Egf3X", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Kickboxing - 1 Month - 5 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/8wM4hQaQr94S1bO9L6", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Kickboxing - 1 Month - 10 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/fZe3dM7Ef6WK2fSaPF", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Kickboxing - 3 Months"});
+linkMapping.push({linkId: "https://buy.stripe.com/fZedSqbUvgxk6w86zq", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Kickboxing - 3 Months - 1 Session"});
+linkMapping.push({linkId: "https://buy.stripe.com/aEU8y6e2D0ymdYA3nf", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Kickboxing - 3 Months - 5 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/8wM7u2aQr0ymbQs3ng", packageName: "Training Only Options - Athlete Factory (all S&C classes) - Kickboxing - 3 Months - 10 Sessions"});
 linkMapping.push({linkId: "https://buy.stripe.com/bIYeWu8Ijgxk8Eg9JF", packageName: "Training Only Options - Athlete Factory (all S&C classes) - S&C - 1 Week"});
 linkMapping.push({linkId: "https://buy.stripe.com/5kAcOm5w74OCf2EbRO", packageName: "Training Only Options - Athlete Factory (all S&C classes) - S&C - 1 Week - 1 Session"});
 linkMapping.push({linkId: "https://buy.stripe.com/14k8y68Ija8Wf2EbRP", packageName: "Training Only Options - Athlete Factory (all S&C classes) - S&C - 1 Week - 5 Sessions"});
@@ -120,6 +154,10 @@ linkMapping.push({linkId: "https://buy.stripe.com/3cseWu5w7bd0g6If47", packageNa
 linkMapping.push({linkId: "https://buy.stripe.com/7sIaGe7Efch4aMo3lq", packageName: "Training Only Options - Athlete Factory (all S&C classes) - S&C - 1 Month - 1 Session"});
 linkMapping.push({linkId: "https://buy.stripe.com/dR6dSqe2Dch4dYAcW1", packageName: "Training Only Options - Athlete Factory (all S&C classes) - S&C - 1 Month - 5 Sessions"});
 linkMapping.push({linkId: "https://buy.stripe.com/4gw9Ca8Ij3Ky07K7BI", packageName: "Training Only Options - Athlete Factory (all S&C classes) - S&C - 1 Month - 10 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/3csaGeaQrgxkdYAga3", packageName: "Training Only Options - Athlete Factory (all S&C classes) - S&C - 3 Months"});
+linkMapping.push({linkId: "https://buy.stripe.com/9AQ4hQ2jV5SGaMocXS", packageName: "Training Only Options - Athlete Factory (all S&C classes) - S&C - 3 Months - 1 Session"});
+linkMapping.push({linkId: "https://buy.stripe.com/4gweWu5w7ftg9Ik1fb", packageName: "Training Only Options - Athlete Factory (all S&C classes) - S&C - 3 Months - 5 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/8wMaGe3nZ4OCaMoaPM", packageName: "Training Only Options - Athlete Factory (all S&C classes) - S&C - 3 Months - 10 Sessions"});
 linkMapping.push({linkId: "https://buy.stripe.com/bIY29I6Abepc8Eg09h", packageName: "Training Only Options - Athlete Factory (all S&C classes) - S & C - Kobes - 1 Week"});
 linkMapping.push({linkId: "https://buy.stripe.com/3csbKie2D2GuaMo2hq", packageName: "Training Only Options - Athlete Factory (all S&C classes) - S & C - Kobes - 1 Week - 1 Session"});
 linkMapping.push({linkId: "https://buy.stripe.com/cN28y62jVa8Wf2E8FP", packageName: "Training Only Options - Athlete Factory (all S&C classes) - S & C - Kobes - 1 Week - 5 Sessions"});
@@ -132,9 +170,14 @@ linkMapping.push({linkId: "https://buy.stripe.com/9AQ4hQ0bNa8WbQsf4j", packageNa
 linkMapping.push({linkId: "https://buy.stripe.com/8wMeWu0bNa8W9Ik9K0", packageName: "Training Only Options - Athlete Factory (all S&C classes) - S & C - Kobes - 1 Month - 1 Session"});
 linkMapping.push({linkId: "https://buy.stripe.com/4gw01Af6H1CqcUwcWd", packageName: "Training Only Options - Athlete Factory (all S&C classes) - S & C - Kobes - 1 Month - 5 Sessions"});
 linkMapping.push({linkId: "https://buy.stripe.com/cN2dSqf6H80O9Ik5tM", packageName: "Training Only Options - Athlete Factory (all S&C classes) - S & C - Kobes - 1 Month - 10 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/00g6pY5w7ftg3jW3nl", packageName: "Training Only Options - Athlete Factory (all S&C classes) - S & C - Kobes - 3 Months"});
+linkMapping.push({linkId: "https://buy.stripe.com/00g6pY9Mn1Cq1bOe20", packageName: "Training Only Options - Athlete Factory (all S&C classes) - S & C - Kobes - 3 Months - 1 Session"});
+linkMapping.push({linkId: "https://buy.stripe.com/eVa29I9Mn80O7AcbTT", packageName: "Training Only Options - Athlete Factory (all S&C classes) - S & C - Kobes - 3 Months - 5 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/dR6g0y1fR1Cq8Eg6zA", packageName: "Training Only Options - Athlete Factory (all S&C classes) - S & C - Kobes - 3 Months - 10 Sessions"});
 linkMapping.push({linkId: "https://buy.stripe.com/5kA29I0bNbd01bOaO7", packageName: "Training Only Options - All Inclusive *striking & s&c - 1 Week"});
 linkMapping.push({linkId: "https://buy.stripe.com/14k8y6cYz6WKg6I7BW", packageName: "Training Only Options - All Inclusive *striking & s&c - 2 Week"});
 linkMapping.push({linkId: "https://buy.stripe.com/8wM3dM1fR5SG8Eg3lH", packageName: "Training Only Options - All Inclusive *striking & s&c - 1 Month"});
+linkMapping.push({linkId: "https://buy.stripe.com/cN2eWu6Abdl807K4rt", packageName: "Training Only Options - All Inclusive *striking & s&c - 3 Months"});
 linkMapping.push({linkId: "https://buy.stripe.com/eVa29I9Mndl83jW1dA", packageName: "Training Only Options - All Inclusive *striking & s&c - Muay Thai - 1 Week"});
 linkMapping.push({linkId: "https://buy.stripe.com/00g6pY0bN5SG07K2hF", packageName: "Training Only Options - All Inclusive *striking & s&c - Muay Thai - 1 Week - 1 Session"});
 linkMapping.push({linkId: "https://buy.stripe.com/dR68y63nZ0ymf2E1dC", packageName: "Training Only Options - All Inclusive *striking & s&c - Muay Thai - 1 Week - 5 Sessions"});
@@ -147,6 +190,10 @@ linkMapping.push({linkId: "https://buy.stripe.com/9AQaGef6Hftg2fS1dI", packageNa
 linkMapping.push({linkId: "https://buy.stripe.com/14k5lU6Abch49Ik7C7", packageName: "Training Only Options - All Inclusive *striking & s&c - Muay Thai - 1 Month - 1 Session"});
 linkMapping.push({linkId: "https://buy.stripe.com/7sIaGe4s32Gu07KaOk", packageName: "Training Only Options - All Inclusive *striking & s&c - Muay Thai - 1 Month - 5 Sessions"});
 linkMapping.push({linkId: "https://buy.stripe.com/9AQeWuaQrbd01bO09H", packageName: "Training Only Options - All Inclusive *striking & s&c - Muay Thai - 1 Month - 10 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/00g3dM8Ij5SG7AcaPS", packageName: "Training Only Options - All Inclusive *striking & s&c - Muay Thai - 3 Months"});
+linkMapping.push({linkId: "https://buy.stripe.com/3cs01A0bN80O2fS7DH", packageName: "Training Only Options - All Inclusive *striking & s&c - Muay Thai - 3 Months - 1 Session"});
+linkMapping.push({linkId: "https://buy.stripe.com/fZeaGee2Dch4dYA9LQ", packageName: "Training Only Options - All Inclusive *striking & s&c - Muay Thai - 3 Months - 5 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/dR629IgaLbd0aMocY3", packageName: "Training Only Options - All Inclusive *striking & s&c - Muay Thai - 3 Months - 10 Sessions"});
 linkMapping.push({linkId: "https://buy.stripe.com/28oaGe3nZ6WKdYA5u2", packageName: "Training Only Options - All Inclusive *striking & s&c - Western Boxing - 1 Week"});
 linkMapping.push({linkId: "https://buy.stripe.com/eVabKi4s31Cqg6I09J", packageName: "Training Only Options - All Inclusive *striking & s&c - Western Boxing - 1 Week - 1 Session"});
 linkMapping.push({linkId: "https://buy.stripe.com/00g6pY7Ef0ymdYA8Gg", packageName: "Training Only Options - All Inclusive *striking & s&c - Western Boxing - 1 Week - 5 Sessions"});
@@ -159,18 +206,26 @@ linkMapping.push({linkId: "https://buy.stripe.com/4gw7u26Abbd05s4g8O", packageNa
 linkMapping.push({linkId: "https://buy.stripe.com/bIY6pY2jVdl88EgcWD", packageName: "Training Only Options - All Inclusive *striking & s&c - Western Boxing - 1 Month - 1 Session"});
 linkMapping.push({linkId: "https://buy.stripe.com/28o01A0bNftg07Kg8Q", packageName: "Training Only Options - All Inclusive *striking & s&c - Western Boxing - 1 Month - 5 Sessions"});
 linkMapping.push({linkId: "https://buy.stripe.com/cN201A0bNa8WbQs09T", packageName: "Training Only Options - All Inclusive *striking & s&c - Western Boxing - 1 Month - 10 Sessions"});
-linkMapping.push({linkId: "https://buy.stripe.com/dR6g0y7Efdl88Eg5ue", packageName: "Training Only Options - All Inclusive *striking & s&c - Striking - 1 Week"});
-linkMapping.push({linkId: "https://buy.stripe.com/6oEcOm4s380OcUw7Cn", packageName: "Training Only Options - All Inclusive *striking & s&c - Striking - 1 Week - 1 Session"});
-linkMapping.push({linkId: "https://buy.stripe.com/aEUaGe9Mnepc9IkaOA", packageName: "Training Only Options - All Inclusive *striking & s&c - Striking - 1 Week - 5 Sessions"});
-linkMapping.push({linkId: "https://buy.stripe.com/cN201A6Ab2Gu4o0bSF", packageName: "Training Only Options - All Inclusive *striking & s&c - Striking - 1 Week - 10 Sessions"});
-linkMapping.push({linkId: "https://buy.stripe.com/bIYeWu6Abgxk7Ac6ym", packageName: "Training Only Options - All Inclusive *striking & s&c - Striking - 2 Week"});
-linkMapping.push({linkId: "https://buy.stripe.com/14k29I4s3a8W07K7Cr", packageName: "Training Only Options - All Inclusive *striking & s&c - Striking - 2 Week - 1 Session"});
-linkMapping.push({linkId: "https://buy.stripe.com/fZe3dMbUv6WKf2E3mc", packageName: "Training Only Options - All Inclusive *striking & s&c - Striking - 2 Week - 5 Sessions"});
-linkMapping.push({linkId: "https://buy.stripe.com/4gw9Caf6H80O9Ik8Gx", packageName: "Training Only Options - All Inclusive *striking & s&c - Striking - 2 Week - 10 Sessions"});
-linkMapping.push({linkId: "https://buy.stripe.com/aEU01A0bN4OC5s46yq", packageName: "Training Only Options - All Inclusive *striking & s&c - Striking - 1 Month"});
-linkMapping.push({linkId: "https://buy.stripe.com/6oE7u28Ij1Cq5s4e0T", packageName: "Training Only Options - All Inclusive *striking & s&c - Striking - 1 Month - 1 Session"});
-linkMapping.push({linkId: "https://buy.stripe.com/14k29IcYzgxk07KaOI", packageName: "Training Only Options - All Inclusive *striking & s&c - Striking - 1 Month - 5 Sessions"});
-linkMapping.push({linkId: "https://buy.stripe.com/00gg0y3nZdl85s42id", packageName: "Training Only Options - All Inclusive *striking & s&c - Striking - 1 Month - 10 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/28o7u27Ef1Cq4o0f6c", packageName: "Training Only Options - All Inclusive *striking & s&c - Western Boxing - 3 Months"});
+linkMapping.push({linkId: "https://buy.stripe.com/9AQ6pY1fR80O5s43nv", packageName: "Training Only Options - All Inclusive *striking & s&c - Western Boxing - 13Month - 1 Session"});
+linkMapping.push({linkId: "https://buy.stripe.com/8wMdSq4s34OCf2E5vE", packageName: "Training Only Options - All Inclusive *striking & s&c - Western Boxing - 3 Months - 5 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/7sI9Ca1fRftg2fSe2b", packageName: "Training Only Options - All Inclusive *striking & s&c - Western Boxing - 3 Months - 10 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/dR6g0y7Efdl88Eg5ue", packageName: "Training Only Options - All Inclusive *striking & s&c - Kickboxing - 1 Week"});
+linkMapping.push({linkId: "https://buy.stripe.com/6oEcOm4s380OcUw7Cn", packageName: "Training Only Options - All Inclusive *striking & s&c - Kickboxing - 1 Week - 1 Session"});
+linkMapping.push({linkId: "https://buy.stripe.com/aEUaGe9Mnepc9IkaOA", packageName: "Training Only Options - All Inclusive *striking & s&c - Kickboxing - 1 Week - 5 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/cN201A6Ab2Gu4o0bSF", packageName: "Training Only Options - All Inclusive *striking & s&c - Kickboxing - 1 Week - 10 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/bIYeWu6Abgxk7Ac6ym", packageName: "Training Only Options - All Inclusive *striking & s&c - Kickboxing - 2 Week"});
+linkMapping.push({linkId: "https://buy.stripe.com/14k29I4s3a8W07K7Cr", packageName: "Training Only Options - All Inclusive *striking & s&c - Kickboxing - 2 Week - 1 Session"});
+linkMapping.push({linkId: "https://buy.stripe.com/fZe3dMbUv6WKf2E3mc", packageName: "Training Only Options - All Inclusive *striking & s&c - Kickboxing - 2 Week - 5 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/4gw9Caf6H80O9Ik8Gx", packageName: "Training Only Options - All Inclusive *striking & s&c - Kickboxing - 2 Week - 10 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/aEU01A0bN4OC5s46yq", packageName: "Training Only Options - All Inclusive *striking & s&c - Kickboxing - 1 Month"});
+linkMapping.push({linkId: "https://buy.stripe.com/6oE7u28Ij1Cq5s4e0T", packageName: "Training Only Options - All Inclusive *striking & s&c - Kickboxing - 1 Month - 1 Session"});
+linkMapping.push({linkId: "https://buy.stripe.com/14k29IcYzgxk07KaOI", packageName: "Training Only Options - All Inclusive *striking & s&c - Kickboxing - 1 Month - 5 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/00gg0y3nZdl85s42id", packageName: "Training Only Options - All Inclusive *striking & s&c - Kickboxing - 1 Month - 10 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/aEU5lUbUvepc8Eg2ju", packageName: "Training Only Options - All Inclusive *striking & s&c - Kickboxing - 3 Months"});
+linkMapping.push({linkId: "https://buy.stripe.com/3cscOm7Ef3Ky4o06zL", packageName: "Training Only Options - All Inclusive *striking & s&c - Kickboxing - 3 Months - 1 Session"});
+linkMapping.push({linkId: "https://buy.stripe.com/7sIbKie2D5SGbQs5vI", packageName: "Training Only Options - All Inclusive *striking & s&c - Kickboxing - 3 Months - 5 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/7sI5lU2jV80O4o0f6j", packageName: "Training Only Options - All Inclusive *striking & s&c - Kickboxing - 3 Months - 10 Sessions"});
 linkMapping.push({linkId: "https://buy.stripe.com/5kAg0yf6H80O7Ac6yu", packageName: "Training Only Options - All Inclusive *S&C & s&c - S&C - 1 Week"});
 linkMapping.push({linkId: "https://buy.stripe.com/dR66pY0bN5SGdYA3mj", packageName: "Training Only Options - All Inclusive *S&C & s&c - S&C - 1 Week - 1 Session"});
 linkMapping.push({linkId: "https://buy.stripe.com/9AQeWu7Ef94SaMo1ec", packageName: "Training Only Options - All Inclusive *S&C & s&c - S&C - 1 Week - 5 Sessions"});
@@ -183,6 +238,10 @@ linkMapping.push({linkId: "https://buy.stripe.com/3csaGe7EfepcaMoaOS", packageNa
 linkMapping.push({linkId: "https://buy.stripe.com/dR68y61fR5SG07Kg9d", packageName: "Training Only Options - All Inclusive *S&C & s&c - S&C - 1 Month - 1 Session"});
 linkMapping.push({linkId: "https://buy.stripe.com/aEUg0y2jVftgcUw0ag", packageName: "Training Only Options - All Inclusive *S&C & s&c - S&C - 1 Month - 5 Sessions"});
 linkMapping.push({linkId: "https://buy.stripe.com/cN2bKif6H4OC3jW3mt", packageName: "Training Only Options - All Inclusive *S&C & s&c - S&C - 1 Month - 10 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/3cscOm7Ef3KydYAf6k", packageName: "Training Only Options - All Inclusive *S&C & s&c - S&C - 3 Months"});
+linkMapping.push({linkId: "https://buy.stripe.com/eVabKi9Mna8Wg6I9M1", packageName: "Training Only Options - All Inclusive *S&C & s&c - S&C - 3 Months - 1 Session"});
+linkMapping.push({linkId: "https://buy.stripe.com/cN2aGeaQrbd03jWcYe", packageName: "Training Only Options - All Inclusive *S&C & s&c - S&C - 3 Months - 5 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/cN24hQf6H3Ky1bOgar", packageName: "Training Only Options - All Inclusive *S&C & s&c - S&C - 3 Months - 10 Sessions"});
 linkMapping.push({linkId: "https://buy.stripe.com/4gwcOm4s31Cq9Ikf5c", packageName: "Training Only Options - All Inclusive *S&C & s&c - S & C - Kobes - 1 Week"});
 linkMapping.push({linkId: "https://buy.stripe.com/cN2cOm6Aba8W07K2ir", packageName: "Training Only Options - All Inclusive *S&C & s&c - S & C - Kobes - 1 Week - 1 Session"});
 linkMapping.push({linkId: "https://buy.stripe.com/bIYaGe7EfftgcUw4qA", packageName: "Training Only Options - All Inclusive *S&C & s&c - S & C - Kobes - 1 Week - 5 Sessions"});
@@ -195,14 +254,19 @@ linkMapping.push({linkId: "https://buy.stripe.com/4gweWu2jV2GuaMo5uK", packageNa
 linkMapping.push({linkId: "https://buy.stripe.com/28o15Ef6Hdl8cUwaP5", packageName: "Training Only Options - All Inclusive *S&C & s&c - S & C - Kobes - 1 Month - 1 Session"});
 linkMapping.push({linkId: "https://buy.stripe.com/28o8y69Mn6WKf2E0as", packageName: "Training Only Options - All Inclusive *S&C & s&c - S & C - Kobes - 1 Month - 5 Sessions"});
 linkMapping.push({linkId: "https://buy.stripe.com/dR66pY5w75SGf2EbTb", packageName: "Training Only Options - All Inclusive *S&C & s&c - S & C - Kobes - 1 Month - 10 Sessions"});
-
+linkMapping.push({linkId: "https://buy.stripe.com/28o7u24s3ftg4o02jC", packageName: "Training Only Options - All Inclusive *S&C & s&c - S & C - Kobes - 3 Months"});
+linkMapping.push({linkId: "https://buy.stripe.com/5kA15EgaLepc1bO0bv", packageName: "Training Only Options - All Inclusive *S&C & s&c - S & C - Kobes - 3 Months - 1 Session"});
+linkMapping.push({linkId: "https://buy.stripe.com/4gw7u26Ab6WK07K4rM", packageName: "Training Only Options - All Inclusive *S&C & s&c - S & C - Kobes - 3 Months - 5 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/fZedSq7Ef1CqbQs4rN", packageName: "Training Only Options - All Inclusive *S&C & s&c - S & C - Kobes - 3 Months - 10 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/3cs01AaQrch49Ik07c", packageName: "Private Training Sessions - Muay Thai - 1 Session"});
+linkMapping.push({linkId: "https://buy.stripe.com/dR615EgaL2Gu3jW5rx", packageName: "Private Training Sessions - Muay Thai - 5 Sessions"});
 linkMapping.push({linkId: "https://buy.stripe.com/bIY29I0bN2Gu9Ik9HO", packageName: "Private Training Sessions - Muay Thai - 10 Sessions"});
 linkMapping.push({linkId: "https://buy.stripe.com/4gwg0y3nZ94S2fS2fn", packageName: "Private Training Sessions - Western Boxing - 1 Session"});
 linkMapping.push({linkId: "https://buy.stripe.com/eVa29Ie2Ddl84o0bPY", packageName: "Private Training Sessions - Western Boxing - 5 Sessions"});
 linkMapping.push({linkId: "https://buy.stripe.com/4gwdSqf6H80OcUw3jt", packageName: "Private Training Sessions - Western Boxing - 10 Sessions"});
-linkMapping.push({linkId: "https://buy.stripe.com/5kAaGe9Mn6WKg6I3ju", packageName: "Private Training Sessions - Striking - 1 Session"});
-linkMapping.push({linkId: "https://buy.stripe.com/00gbKi7Efgxk07KbQ1", packageName: "Private Training Sessions - Striking - 5 Sessions"});
-linkMapping.push({linkId: "https://buy.stripe.com/5kA9Caf6Hdl8bQsbQ2", packageName: "Private Training Sessions - Striking - 10 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/5kAaGe9Mn6WKg6I3ju", packageName: "Private Training Sessions - Kickboxing - 1 Session"});
+linkMapping.push({linkId: "https://buy.stripe.com/00gbKi7Efgxk07KbQ1", packageName: "Private Training Sessions - Kickboxing - 5 Sessions"});
+linkMapping.push({linkId: "https://buy.stripe.com/5kA9Caf6Hdl8bQsbQ2", packageName: "Private Training Sessions - Kickboxing - 10 Sessions"});
 linkMapping.push({linkId: "https://buy.stripe.com/00gdSq4s3ftg9Ik9HV", packageName: "Private Training Sessions - S & C - Kobes - 1 Session"});
 linkMapping.push({linkId: "https://buy.stripe.com/bIY15E0bN4OCcUwcU8", packageName: "Private Training Sessions - S & C - Kobes - 5 Sessions"});
 linkMapping.push({linkId: "https://buy.stripe.com/cN2aGe4s30ym07K5rH", packageName: "Private Training Sessions - S & C - Kobes - 10 Sessions"});
@@ -318,7 +382,7 @@ var trainingOnlyOptionSessionValue = parseFloat($("#training-only-option-session
 var durationPrice = 0;
 
 var trainingDescriptions = [];
-trainingDescriptions.push("The Striking Department: The Striking Department is where you go to sharpen the axe.");
+trainingDescriptions.push("The Striking Factory: You may choose between Muay Thai, Western Boxing or Kickboxing/MMA Striking");
 trainingDescriptions.push("Athlete factory: The Athlete Factory is where you go to build the Armour.");
 trainingDescriptions.push("All Access: Our All Access pass includes a free 30-minute consultation with our onsite Mindset & Performance Specialist, Shaun Kober.");
 
@@ -370,6 +434,8 @@ function trainingOnlyOptionsPriceCalc() {
 			durationPrice = 2500;
 		} else if ($("#training-duration :selected").text() == "1 Month") {
 			durationPrice = 6500;
+		} else if ($("#training-duration :selected").text() == "3 Months") {
+			durationPrice = 22500;
 		}
 	} else if ($('#Fitness-Packages-2 :selected').text() == "Athlete Factory (all S&C classes)") {
 		//Athlet and Striking option having same pricing.
@@ -379,6 +445,8 @@ function trainingOnlyOptionsPriceCalc() {
 			durationPrice = 1500;
 		} else if ($("#training-duration :selected").text() == "1 Month") {
 			durationPrice = 4000;
+		} else if ($("#training-duration :selected").text() == "3 Months") {
+			durationPrice = 12500;
 		}
 	} else {
 		if ($("#training-duration :selected").text() == "1 Week") {
@@ -387,6 +455,8 @@ function trainingOnlyOptionsPriceCalc() {
 			durationPrice = 1500;
 		} else if ($("#training-duration :selected").text() == "1 Month") {
 			durationPrice = 4000;
+		} else if ($("#training-duration :selected").text() == "3 Months") {
+			durationPrice = 12500;
 		}
 	}
 	
@@ -533,10 +603,11 @@ $('#delete-and-add-new-booking-button').on('click', function () {
 });
 
 function getTurkeyCurrency(price) {
-	var currency_symbol = "₺"
-	var formattedOutput = new Intl.NumberFormat('tr-TR', {
+	// var thai = new Intl.NumberFormat('th', { style: 'currency', currency: 'THB' }).format(12345);
+	var currency_symbol = "฿"
+	var formattedOutput = new Intl.NumberFormat('th', {
 		style: 'currency',
-		currency: 'TRY',
+		currency: 'THB',
 		minimumFractionDigits: 2,
 	});
 	return formattedOutput.format(price).replace(currency_symbol, '');
