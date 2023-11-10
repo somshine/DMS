@@ -186,20 +186,20 @@ function calculateThePrice() {
     let afterSessionPrice = 0;
 
     let accommodationPackageItem = accommodationTypeWisePrices.filter((item) => {
-        console.log("-----------", item.package, accommodationPackage, "Room Type", roomType, "==", item.type);
+        //console.log("-----------", item.package, accommodationPackage, "Room Type", roomType, "==", item.type);
         return item.package == accommodationPackage && roomType.indexOf(item.type) != -1 && timeType.indexOf(item.timeType) != -1;
     });
-    console.log("1. Accommodation Package selected ::", accommodationPackageItem);
+    //console.log("1. Accommodation Package selected ::", accommodationPackageItem);
 
     // let fitnessPackageitem = fitnessPackagePrices.filter((item) => {
     //     return fitnessPackage == item.packageName;
     // });
-    // console.log("2. Fitness type selected:: ", fitnessPackageitem);
+    // //console.log("2. Fitness type selected:: ", fitnessPackageitem);
 
     let privateLessionItem = privateLessionPrices.filter((item) => {
         return item.packageName == privateLession;
     });
-    console.log("Private lession : ", privateLessionItem);
+    //console.log("Private lession : ", privateLessionItem);
 
     totalAllInclusivePackagePrice = 0;
     console.error("1. Final price is ::", totalAllInclusivePackagePrice);
@@ -214,7 +214,7 @@ function calculateThePrice() {
         session = parseInt(session.split(" ")[0]);
     }
 
-    console.log("private session selected :: ", session);
+    //console.log("private session selected :: ", session);
 
     if (privateLessionItem && privateLessionItem[0] && session >= 1) {
         privateLessionPrice = parseInt(privateLessionItem[0].price);
@@ -235,8 +235,8 @@ function calculateThePrice() {
     }
 
     console.error("Final price is ::", totalAllInclusivePackagePrice);
-    console.log("Formular: (Tyson Suite + X night/Week) + Fitnesss Package Price + (privateSession * session) = Final Price");
-    console.log(accommodationPrice, fitnessPrice, "(privateLessionPrice = " + privateLessionPrice + " * session = " + session + ") = ", afterSessionPrice, " = ", totalAllInclusivePackagePrice);
+    //console.log("Formular: (Tyson Suite + X night/Week) + Fitnesss Package Price + (privateSession * session) = Final Price");
+    //console.log(accommodationPrice, fitnessPrice, "(privateLessionPrice = " + privateLessionPrice + " * session = " + session + ") = ", afterSessionPrice, " = ", totalAllInclusivePackagePrice);
 
     $('#all-inclusive-package-final-price').html(convertToThb(totalAllInclusivePackagePrice));
     $("#input-final-package-price").val(totalAllInclusivePackagePrice);
