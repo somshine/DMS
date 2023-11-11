@@ -131,9 +131,11 @@ accommodationTypeWisePrices.push({package: "Room +Workouts (All Inclusive) +Pool
 // fitnessPackagePrices.push({packageName: "All Inclusive *striking & s&c", price: 2500});
 
 var privateLessionPrices = [];
+privateLessionPrices.push({packageName: "Muay Thai", price: 700});
 privateLessionPrices.push({packageName: "Western Boxing", price: 1500});
-privateLessionPrices.push({packageName: "Striking", price: 1500});
-privateLessionPrices.push({packageName: "S&C", price: 4000});
+privateLessionPrices.push({packageName: "Kickboxing", price: 1500});
+privateLessionPrices.push({packageName: "S&C", price: 1500});
+privateLessionPrices.push({packageName: "S & C - Kobe's", price: 4000});
 
 /****************
  * TODO: please do all initilization above
