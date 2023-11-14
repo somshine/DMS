@@ -1,4 +1,4 @@
-//V-1.1.3
+//V-1.1.4
 //<script src="https://cdn.jsdelivr.net/gh/somshine/DMS@master/accommodation.js" data-use-service-core defer></script>
 
 /***********************
@@ -90,30 +90,33 @@ $("#room-pool-sauna-canelo").on("click", function() {
  * Room and Workouts third tab on wards
  */
 var roomWorkoutsTyson = [];
+roomWorkoutsTyson.push({name: "Tyson Suite", type: "1 DAY", price: 1800});
 roomWorkoutsTyson.push({name: "Tyson Suite", type: "1 WEEK", price: 11000});
 roomWorkoutsTyson.push({name: "Tyson Suite", type: "2 WEEKS", price: 21000});
-roomWorkoutsTyson.push({name: "Tyson Suite", type: "1 MONTH", price: 40000});
-roomWorkoutsTyson.push({name: "Tyson Suite", type: "3 MONTHS", price: 114000});
+roomWorkoutsTyson.push({name: "Tyson Suite", type: "1 MONTH", price: 33000});
+roomWorkoutsTyson.push({name: "Tyson Suite", type: "3 MONTHS", price: 98000});
 
 $("#room-workouts-tyson").on("click", function() {
 	changePackage(this, 'tyson', 'Room +Workouts', roomWorkoutsTyson);
 });
 
 var roomWorkoutsCrawford = [];
+roomWorkoutsCrawford.push({name: "Crawford Suite", type: "1 DAY", price: 1700});
 roomWorkoutsCrawford.push({name: "Crawford Suite", type: "1 WEEK", price: 10500});
 roomWorkoutsCrawford.push({name: "Crawford Suite", type: "2 WEEKS", price: 20000});
-roomWorkoutsCrawford.push({name: "Crawford Suite", type: "1 MONTH", price: 36000});
-roomWorkoutsCrawford.push({name: "Crawford Suite", type: "3 MONTHS", price: 102000});
+roomWorkoutsCrawford.push({name: "Crawford Suite", type: "1 MONTH", price: 31000});
+roomWorkoutsCrawford.push({name: "Crawford Suite", type: "3 MONTHS", price: 92000});
 
 $("#room-workouts-crawford").on("click", function() {
 	changePackage(this, 'crawford', 'Room +Workouts', roomWorkoutsCrawford);
 });
 
 var roomWorkoutsCanelo = [];
+roomWorkoutsCanelo.push({name: "Canelo Suite", type: "1 DAY", price: 1600});
 roomWorkoutsCanelo.push({name: "Canelo Suite", type: "1 WEEK", price: 10000});
 roomWorkoutsCanelo.push({name: "Canelo Suite", type: "2 WEEKS", price: 19000});
-roomWorkoutsCanelo.push({name: "Canelo Suite", type: "1 MONTH", price: 34000});
-roomWorkoutsCanelo.push({name: "Canelo Suite", type: "3 MONTHS", price: 96000});
+roomWorkoutsCanelo.push({name: "Canelo Suite", type: "1 MONTH", price: 29500});
+roomWorkoutsCanelo.push({name: "Canelo Suite", type: "3 MONTHS", price: 86000});
 
 $("#room-workouts-canelo").on("click", function() {
 	changePackage(this, 'canelo', 'Room +Workouts', roomWorkoutsCanelo);
@@ -126,30 +129,33 @@ $("#room-workouts-canelo").on("click", function() {
  */
 
 var allTyson = [];
+allTyson.push({name: "Tyson Suite", type: "1 DAY", price: 1900});
 allTyson.push({name: "Tyson Suite", type: "1 WEEK", price: 11500});
 allTyson.push({name: "Tyson Suite", type: "2 WEEKS", price: 22000});
-allTyson.push({name: "Tyson Suite",  type: "1 MONTH", price: 42000});
-allTyson.push({name: "Tyson Suite",  type: "3 MONTHS", price: 118000});
+allTyson.push({name: "Tyson Suite",  type: "1 MONTH", price: 35000});
+allTyson.push({name: "Tyson Suite",  type: "3 MONTHS", price: 101000});
 
 $('#all-room-tyson').on("click", function() {
 	changePackage(this, 'tyson', 'Room +Workouts +Poll & Sauna', allTyson);
 });
 
 var allCrawford = [];
+allCrawford.push({name: "Crawford Suite", type: "1 DAY", price: 1800});
 allCrawford.push({name: "Crawford Suite", type: "1 WEEK", price: 11000});
 allCrawford.push({name: "Crawford Suite", type: "2 WEEKS", price: 21000});
-allCrawford.push({name: "Crawford Suite",  type: "1 MONTH", price: 38000});
-allCrawford.push({name: "Crawford Suite",  type: "3 MONTHS", price: 10600});
+allCrawford.push({name: "Crawford Suite",  type: "1 MONTH", price: 33000});
+allCrawford.push({name: "Crawford Suite",  type: "3 MONTHS", price: 95000});
 
 $('#all-room-crawford').on("click", function() {
 	changePackage(this, 'crawford', 'Room +Workouts +Poll & Sauna', allCrawford);
 });
 
 var allCanelo = [];
+allCanelo.push({name: "Canelo Suite", type: "1 WEEK", price: 1700});
 allCanelo.push({name: "Canelo Suite", type: "1 WEEK", price: 10500});
 allCanelo.push({name: "Canelo Suite", type: "2 WEEKS", price: 20000});
-allCanelo.push({name: "Canelo Suite",  type: "1 MONTH", price: 36000});
-allCanelo.push({name: "Canelo Suite",  type: "3 MONTHS", price: 110000});
+allCanelo.push({name: "Canelo Suite",  type: "1 MONTH", price: 31500});
+allCanelo.push({name: "Canelo Suite",  type: "3 MONTHS", price: 89000});
 
 $('#all-room-canelo').on("click", function() {
 	changePackage(this, 'canelo', 'Room +Workouts +Poll & Sauna', allCanelo);
