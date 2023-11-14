@@ -1,4 +1,4 @@
-//V1.1.3
+//V1.1.4
 // https://cdn.jsdelivr.net/gh/somshine/DMS/
 //<script src="https://cdn.jsdelivr.net/gh/somshine/DMS@45c20e2d1c9bc97b7ad21407373ee7be97bc079b/allInclusivePackagesPriceCalculation.js" data-use-service-core defer></script>
 
@@ -21,8 +21,8 @@ accommodationTypeWisePrices.push({package: "Room", type: "Tyson Suite", timeType
 accommodationTypeWisePrices.push({package: "Room", type: "Tyson Suite", timeType: "1 Week", price: 7500});
 accommodationTypeWisePrices.push({package: "Room", type: "Tyson Suite", timeType: "2 Weeks", price: 14000});
 accommodationTypeWisePrices.push({package: "Room", type: "Tyson Suite", timeType: "1 Month", price: 22000});
-accommodationTypeWisePrices.push({package: "Room", type: "Tyson Suite", timeType: "3 Months", price: 66000});
-accommodationTypeWisePrices.push({package: "Room", type: "Tyson Suite", timeType: "6 Months", price: 132000});
+accommodationTypeWisePrices.push({package: "Room", type: "Tyson Suite", timeType: "3 Months", price: 62000});
+accommodationTypeWisePrices.push({package: "Room", type: "Tyson Suite", timeType: "6 Months", price: 128000});
 
 //Room + Pool & Sauna
 accommodationTypeWisePrices.push({package: "Room + Pool & Sauna", type: "Tyson Suite", timeType: "1 Night", price: 1300});
@@ -30,26 +30,26 @@ accommodationTypeWisePrices.push({package: "Room + Pool & Sauna", type: "Tyson S
 accommodationTypeWisePrices.push({package: "Room + Pool & Sauna", type: "Tyson Suite", timeType: "1 Week", price: 8000});
 accommodationTypeWisePrices.push({package: "Room + Pool & Sauna", type: "Tyson Suite", timeType: "2 Weeks", price: 15000});
 accommodationTypeWisePrices.push({package: "Room + Pool & Sauna", type: "Tyson Suite", timeType: "1 Month", price: 24000});
-accommodationTypeWisePrices.push({package: "Room + Pool & Sauna", type: "Tyson Suite", timeType: "3 Months", price: 72000});
-accommodationTypeWisePrices.push({package: "Room + Pool & Sauna", type: "Tyson Suite", timeType: "6 Months", price: 144000});
+accommodationTypeWisePrices.push({package: "Room + Pool & Sauna", type: "Tyson Suite", timeType: "3 Months", price: 68000});
+accommodationTypeWisePrices.push({package: "Room + Pool & Sauna", type: "Tyson Suite", timeType: "6 Months", price: 140000});
 
 //Room + Training (All Inclusive)
-// accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive)", type: "Tyson Suite", timeType: "1 Night", price: 1800});
-// accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive)", type: "Tyson Suite", timeType: "2 Nights", price: 3400});
+accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive)", type: "Tyson Suite", timeType: "1 Night", price: 1800});
+accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive)", type: "Tyson Suite", timeType: "2 Nights", price: 3600});
 accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive)", type: "Tyson Suite", timeType: "1 Week", price: 11000});
 accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive)", type: "Tyson Suite", timeType: "2 Weeks", price: 21000});
-accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive)", type: "Tyson Suite", timeType: "1 Month", price: 40000});
-accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive)", type: "Tyson Suite", timeType: "3 Months", price: 114000});
-accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive)", type: "Tyson Suite", timeType: "6 Months", price: 228000});
+accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive)", type: "Tyson Suite", timeType: "1 Month", price: 33000});
+accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive)", type: "Tyson Suite", timeType: "3 Months", price: 98000});
+accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive)", type: "Tyson Suite", timeType: "6 Months", price: 196000});
 
 //Room + Training (All Inclusive) + Pool/Sauna
-// accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive) + Pool/Sauna", type: "Tyson Suite", timeType: "1 Night", price: 1900});
-// accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive) + Pool/Sauna", type: "Tyson Suite", timeType: "2 Nights", price: 3800});
+accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive) + Pool/Sauna", type: "Tyson Suite", timeType: "1 Night", price: 1900});
+accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive) + Pool/Sauna", type: "Tyson Suite", timeType: "2 Nights", price: 3800});
 accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive) + Pool/Sauna", type: "Tyson Suite", timeType: "1 Week", price: 11500});
 accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive) + Pool/Sauna", type: "Tyson Suite", timeType: "2 Weeks", price: 22000});
-accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive) + Pool/Sauna", type: "Tyson Suite", timeType: "1 Month", price: 42000});
-accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive) + Pool/Sauna", type: "Tyson Suite", timeType: "3 Months", price: 118000});
-accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive) + Pool/Sauna", type: "Tyson Suite", timeType: "6 Months", price: 232000});
+accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive) + Pool/Sauna", type: "Tyson Suite", timeType: "1 Month", price: 35000});
+accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive) + Pool/Sauna", type: "Tyson Suite", timeType: "3 Months", price: 101000});
+accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive) + Pool/Sauna", type: "Tyson Suite", timeType: "6 Months", price: 210000});
 
 //Crawford Deluxe
 //Room
@@ -71,22 +71,22 @@ accommodationTypeWisePrices.push({package: "Room + Pool & Sauna", type: "Crawfor
 accommodationTypeWisePrices.push({package: "Room + Pool & Sauna", type: "Crawford Deluxe", timeType: "6 Months", price: 126000});
 
 //Room + Training (All Inclusive)
-// accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive)", type: "Crawford Deluxe", timeType: "1 Night", price: 1200});
-// accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive)", type: "Crawford Deluxe", timeType: "2 Nights", price: 2400});
+accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive)", type: "Crawford Deluxe", timeType: "1 Night", price: 1700});
+accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive)", type: "Crawford Deluxe", timeType: "2 Nights", price: 3400});
 accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive)", type: "Crawford Deluxe", timeType: "1 Week", price: 10500});
 accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive)", type: "Crawford Deluxe", timeType: "2 Weeks", price: 20000});
-accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive)", type: "Crawford Deluxe", timeType: "1 Month", price: 36000});
-accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive)", type: "Crawford Deluxe", timeType: "3 Months", price: 102000});
-accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive)", type: "Crawford Deluxe", timeType: "6 Months", price: 204000});
+accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive)", type: "Crawford Deluxe", timeType: "1 Month", price: 31000});
+accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive)", type: "Crawford Deluxe", timeType: "3 Months", price: 92000});
+accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive)", type: "Crawford Deluxe", timeType: "6 Months", price: 186000});
 
 //Room + Training (All Inclusive) + Pool/Sauna
-// accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive) + Pool/Sauna", type: "Crawford Deluxe", timeType: "1 Night", price: 1200});
-// accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive) + Pool/Sauna", type: "Crawford Deluxe", timeType: "2 Nights", price: 2400});
+accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive) + Pool/Sauna", type: "Crawford Deluxe", timeType: "1 Night", price: 1800});
+accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive) + Pool/Sauna", type: "Crawford Deluxe", timeType: "2 Nights", price: 3600});
 accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive) + Pool/Sauna", type: "Crawford Deluxe", timeType: "1 Week", price: 11000});
 accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive) + Pool/Sauna", type: "Crawford Deluxe", timeType: "2 Weeks", price: 21000});
-accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive) + Pool/Sauna", type: "Crawford Deluxe", timeType: "1 Month", price: 38000});
-accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive) + Pool/Sauna", type: "Crawford Deluxe", timeType: "3 Months", price: 106000});
-accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive) + Pool/Sauna", type: "Crawford Deluxe", timeType: "6 Months", price: 212000});
+accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive) + Pool/Sauna", type: "Crawford Deluxe", timeType: "1 Month", price: 33000});
+accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive) + Pool/Sauna", type: "Crawford Deluxe", timeType: "3 Months", price: 95000});
+accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive) + Pool/Sauna", type: "Crawford Deluxe", timeType: "6 Months", price: 198000});
 
 //Canelo 
 //Room
@@ -95,8 +95,8 @@ accommodationTypeWisePrices.push({package: "Room", type: "Canelo Double", timeTy
 accommodationTypeWisePrices.push({package: "Room", type: "Canelo Double", timeType: "1 Week", price: 6300});
 accommodationTypeWisePrices.push({package: "Room", type: "Canelo Double", timeType: "2 Weeks", price: 12000});
 accommodationTypeWisePrices.push({package: "Room", type: "Canelo Double", timeType: "1 Month", price: 18000});
-accommodationTypeWisePrices.push({package: "Room", type: "Canelo Double", timeType: "3 Months", price: 42000});
-accommodationTypeWisePrices.push({package: "Room", type: "Canelo Double", timeType: "6 Months", price: 90000});
+accommodationTypeWisePrices.push({package: "Room", type: "Canelo Double", timeType: "3 Months", price: 50000});
+accommodationTypeWisePrices.push({package: "Room", type: "Canelo Double", timeType: "6 Months", price: 108000});
 
 //Room + Pool & Sauna
 accommodationTypeWisePrices.push({package: "Room + Pool & Sauna", type: "Canelo Double", timeType: "1 Night", price: 1100});
@@ -108,22 +108,22 @@ accommodationTypeWisePrices.push({package: "Room + Pool & Sauna", type: "Canelo 
 accommodationTypeWisePrices.push({package: "Room + Pool & Sauna", type: "Canelo Double", timeType: "6 Months", price: 112000});
 
 //Room + Training (All Inclusive)
-// accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive)", type: "Canelo Double", timeType: "1 Night", price: 1200});
-// accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive)", type: "Canelo Double", timeType: "2 Nights", price: 2400});
+accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive)", type: "Canelo Double", timeType: "1 Night", price: 1600});
+accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive)", type: "Canelo Double", timeType: "2 Nights", price: 3400});
 accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive)", type: "Canelo Double", timeType: "1 Week", price: 10000});
 accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive)", type: "Canelo Double", timeType: "2 Weeks", price: 19000});
-accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive)", type: "Canelo Double", timeType: "1 Month", price: 34000});
-accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive)", type: "Canelo Double", timeType: "3 Months", price: 96000});
-accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive)", type: "Canelo Double", timeType: "6 Months", price: 192000});
+accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive)", type: "Canelo Double", timeType: "1 Month", price: 29500});
+accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive)", type: "Canelo Double", timeType: "3 Months", price: 86000});
+accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive)", type: "Canelo Double", timeType: "6 Months", price: 173000});
 
 //Room + Training (All Inclusive) + Pool/Sauna
-// accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive) + Pool/Sauna", type: "Canelo Double", timeType: "1 Night", price: 1200});
-// accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive) + Pool/Sauna", type: "Canelo Double", timeType: "2 Nights", price: 2400});
+accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive) + Pool/Sauna", type: "Canelo Double", timeType: "1 Night", price: 1700});
+accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive) + Pool/Sauna", type: "Canelo Double", timeType: "2 Nights", price: 3400});
 accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive) + Pool/Sauna", type: "Canelo Double", timeType: "1 Week", price: 10500});
 accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive) + Pool/Sauna", type: "Canelo Double", timeType: "2 Weeks", price: 20000});
-accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive) + Pool/Sauna", type: "Canelo Double", timeType: "1 Month", price: 36000});
-accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive) + Pool/Sauna", type: "Canelo Double", timeType: "3 Months", price: 110000});
-accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive) + Pool/Sauna", type: "Canelo Double", timeType: "6 Months", price: 220000});
+accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive) + Pool/Sauna", type: "Canelo Double", timeType: "1 Month", price: 31500});
+accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive) + Pool/Sauna", type: "Canelo Double", timeType: "3 Months", price: 89000});
+accommodationTypeWisePrices.push({package: "Room + Training (All Inclusive) + Pool/Sauna", type: "Canelo Double", timeType: "6 Months", price: 184000});
 
 // var fitnessPackagePrices = [];
 // fitnessPackagePrices.push({packageName: "Striking Factory (all striking classes)", price: 1500});
