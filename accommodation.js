@@ -1,4 +1,4 @@
-//V-1.1.4
+//V-1.1.5
 //<script src="https://cdn.jsdelivr.net/gh/somshine/DMS@master/accommodation.js" data-use-service-core defer></script>
 
 /***********************
@@ -172,6 +172,7 @@ function changePackage(objThis, roomType, accommodationType, items) {
 	$("#" + roomType + "-package-type-name").html(roomSize + " square meters");
 	$("#" + roomType + "-suite-packages").html("");
 	$('.accommodation-type').html(accommodationType);
+	$('#selected-package-detail').val(accommodationType);
 	items.forEach((item, index) => {
 		let value = item.name + ' - ' + item.type + "(" + item.price + ")";
 		let radioButton = '<label class="radiobutton-item w-radio" id="isDynamic">' +
