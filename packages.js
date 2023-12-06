@@ -657,6 +657,8 @@ function addNewPackage() {
 			}
 		});
 	});
+
+	document.getElementById("payment-section").scrollIntoView({ behavior: "smooth" });
 }
 
 function openPackageLink() {
