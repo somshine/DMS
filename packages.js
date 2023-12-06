@@ -1,4 +1,4 @@
-//V1.1.27
+//V1.1.28
 // https://cdn.jsdelivr.net/gh/somshine/DMS/
 //<script src="https://cdn.jsdelivr.net/gh/somshine/DMS@61ba31e9743c7f3497a35e5d915f5fb8c8931e5c/packages.js" data-use-service-core defer></script>
 //<script src="https://cdn.jsdelivr.net/gh/somshine/DMS@master/accommodation.js" data-use-service-core defer></script>
@@ -600,6 +600,8 @@ $('#delete-and-add-new-booking-button').on('click', function () {
 	bookingTotalPrice = 0;
 	bookingTotalWithVatPrice = 0;
 	bookingTotalIncludeVatPrice = 0;
+
+	document.getElementById("booking-package-section").scrollIntoView({ behavior: "smooth" });
 });
 
 function getTurkeyCurrency(price) {
