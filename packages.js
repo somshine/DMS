@@ -1,4 +1,4 @@
-//V1.1.29
+//V1.1.30
 // https://cdn.jsdelivr.net/gh/somshine/DMS/
 //<script src="https://cdn.jsdelivr.net/gh/somshine/DMS@61ba31e9743c7f3497a35e5d915f5fb8c8931e5c/packages.js" data-use-service-core defer></script>
 //<script src="https://cdn.jsdelivr.net/gh/somshine/DMS@master/accommodation.js" data-use-service-core defer></script>
@@ -6,58 +6,58 @@
 var linkMapping = [];
 var packageLink = "";
 
-linkMapping.push({linkId: "https://buy.stripe.com/9AQ7u2gaLgxkdYAeaH", packageName: "All Inclusive - 1 Month"}); 
-linkMapping.push({linkId: "https://buy.stripe.com/6oEbKiaQrepcdYA3w4", packageName: "All Inclusive - 1 Month - Muay Thai - 1 Session"}); 
-linkMapping.push({linkId: "https://buy.stripe.com/9AQdSq5w7bd05s4eaK", packageName: "All Inclusive - 1 Month - Muay Thai - 10 Sessions"}); 
-linkMapping.push({linkId: "https://buy.stripe.com/eVa9Ca0bNa8W7Ac3w5", packageName: "All Inclusive - 1 Month - Muay Thai - 5 Sessions"}); 
-linkMapping.push({linkId: "https://buy.stripe.com/6oE01AbUv6WKbQsc2G", packageName: "All Inclusive - 1 Month - S&C - 1 Session"}); 
-linkMapping.push({linkId: "https://buy.stripe.com/3cs5lU3nZftg7AceaQ", packageName: "All Inclusive - 1 Month - S&C - 10 Sessions"}); 
-linkMapping.push({linkId: "https://buy.stripe.com/6oEg0y0bN3Ky6w8giX", packageName: "All Inclusive - 1 Month - S&C - 5 Sessions"}); 
-linkMapping.push({linkId: "https://buy.stripe.com/bIYaGegaL2Guf2Ec2J", packageName: "All Inclusive - 1 Month - S&C - Kobes - 1 Session"}); 
-linkMapping.push({linkId: "https://buy.stripe.com/00g4hQ9Mnftg6w81o7", packageName: "All Inclusive - 1 Month - S&C - Kobes - 10 Sessions"}); 
-linkMapping.push({linkId: "https://buy.stripe.com/aEU4hQ4s380OaMoeaS", packageName: "All Inclusive - 1 Month - S&C - Kobes - 5 Sessions"}); 
-linkMapping.push({linkId: "https://buy.stripe.com/dR69CacYzepc4o02s3", packageName: "All Inclusive - 1 Month - Western Boxing - 1 Session"}); 
-linkMapping.push({linkId: "https://buy.stripe.com/3csbKi2jVgxk1bO5Eh", packageName: "All Inclusive - 1 Month - Western Boxing - 10 Sessions"}); 
-linkMapping.push({linkId: "https://buy.stripe.com/14keWu1fR4OCf2EeaM", packageName: "All Inclusive - 1 Month - Western Boxing - 5 Sessions"}); 
-linkMapping.push({linkId: "https://buy.stripe.com/6oE8y66Ab3Ky7Acd6d", packageName: "All Inclusive - 1 Week"}); 
-linkMapping.push({linkId: "https://buy.stripe.com/9AQ3dM6Abftg1bO1nw", packageName: "All Inclusive - 1 Week - Muay Thai - 1 Session"}); 
-linkMapping.push({linkId: "https://buy.stripe.com/6oEeWu7Efbd09Ik2rC", packageName: "All Inclusive - 1 Week - Muay Thai - 10 Sessions"}); 
-linkMapping.push({linkId: "https://buy.stripe.com/8wM4hQaQr80O3jW2rB", packageName: "All Inclusive - 1 Week - Muay Thai - 5 Sessions"}); 
-linkMapping.push({linkId: "https://buy.stripe.com/3csg0y2jVgxk3jW5DS", packageName: "All Inclusive - 1 Week - S&C - 1 Session"}); 
-linkMapping.push({linkId: "https://buy.stripe.com/4gwdSqaQra8WdYAfeu", packageName: "All Inclusive - 1 Week - S&C - 10 Sessions"}); 
-linkMapping.push({linkId: "https://buy.stripe.com/5kAeWue2Dgxk6w81nD", packageName: "All Inclusive - 1 Week - S&C - 5 Sessions"}); 
-linkMapping.push({linkId: "https://buy.stripe.com/fZe3dMaQr94SbQs4zR", packageName: "All Inclusive - 1 Week - S&C - Kobes - 1 Session"}); 
-linkMapping.push({linkId: "https://buy.stripe.com/aEU9Ca8Ij1CqcUw2rL", packageName: "All Inclusive - 1 Week - S&C - Kobes - 10 Sessions"}); 
-linkMapping.push({linkId: "https://buy.stripe.com/5kA5lU8Ijch46w84zS", packageName: "All Inclusive - 1 Week - S&C - Kobes - 5 Sessions"}); 
-linkMapping.push({linkId: "https://buy.stripe.com/aEU15E4s3ch4bQs4zL", packageName: "All Inclusive - 1 Week - Western Boxing - 1 Session"}); 
-linkMapping.push({linkId: "https://buy.stripe.com/bIYcOmbUv0ym2fS1nB", packageName: "All Inclusive - 1 Week - Western Boxing - 10 Sessions"}); 
-linkMapping.push({linkId: "https://buy.stripe.com/dR6eWu8Ijgxk6w8aYa", packageName: "All Inclusive - 1 Week - Western Boxing - 5 Sessions"}); 
-linkMapping.push({linkId: "https://buy.stripe.com/6oEcOmaQr5SG8Egeau", packageName: "All Inclusive - 2 Week"}); 
-linkMapping.push({linkId: "https://buy.stripe.com/cN24hQ2jV1Cqf2E1nJ", packageName: "All Inclusive - 2 Week - Muay Thai - 1 Session"}); 
-linkMapping.push({linkId: "https://buy.stripe.com/3cseWu1fR94S6w89Uh", packageName: "All Inclusive - 2 Week - Muay Thai - 10 Sessions"}); 
-linkMapping.push({linkId: "https://buy.stripe.com/aEU15E0bN80O3jWeaw", packageName: "All Inclusive - 2 Week - Muay Thai - 5 Sessions"}); 
-linkMapping.push({linkId: "https://buy.stripe.com/dR615E9Mngxk8EgfeF", packageName: "All Inclusive - 2 Week - S&C - 1 Session"}); 
-linkMapping.push({linkId: "https://buy.stripe.com/4gwdSq0bN4OC9IkeaD", packageName: "All Inclusive - 2 Week - S&C - 10 Sessions"}); 
-linkMapping.push({linkId: "https://buy.stripe.com/fZe7u27Efgxk3jW6Ia", packageName: "All Inclusive - 2 Week - S&C - 5 Sessions"}); 
-linkMapping.push({linkId: "https://buy.stripe.com/7sIg0y7Efdl89Ik9Uo", packageName: "All Inclusive - 2 Week - S&C - Kobes - 1 Session"}); 
-linkMapping.push({linkId: "https://buy.stripe.com/8wM01A5w7dl81bOd6C", packageName: "All Inclusive - 2 Week - S&C - Kobes - 10 Sessions"}); 
-linkMapping.push({linkId: "https://buy.stripe.com/7sI4hQ4s380O9Ik8Ql", packageName: "All Inclusive - 2 Week - S&C - Kobes - 5 Sessions"}); 
-linkMapping.push({linkId: "https://buy.stripe.com/3cseWu7Ef80OcUwfeC", packageName: "All Inclusive - 2 Week - Western Boxing - 1 Session"}); 
-linkMapping.push({linkId: "https://buy.stripe.com/fZeg0y9Mn3Ky9Ik7Mc", packageName: "All Inclusive - 2 Week - Western Boxing - 10 Sessions"}); 
-linkMapping.push({linkId: "https://buy.stripe.com/14k7u2bUvch407K6I7", packageName: "All Inclusive - 2 Week - Western Boxing - 5 Sessions"}); 
-linkMapping.push({linkId: "https://buy.stripe.com/00g5lU5w75SGaMo8QA", packageName: "All Inclusive - 3 Months"}); 
-linkMapping.push({linkId: "https://buy.stripe.com/cN2aGe8Ija8W9Ik2sd", packageName: "All Inclusive - 3 Months - Muay Thai - 1 Session"}); 
-linkMapping.push({linkId: "https://buy.stripe.com/cN2cOm8Ij6WKaMo4An", packageName: "All Inclusive - 3 Months - Muay Thai - 10 Sessions"}); 
-linkMapping.push({linkId: "https://buy.stripe.com/7sIaGe2jV6WKcUw9UG", packageName: "All Inclusive - 3 Months - Muay Thai - 5 Sessions"}); 
-linkMapping.push({linkId: "https://buy.stripe.com/5kAbKi1fR2GucUwc2T", packageName: "All Inclusive - 3 Months - S&C - 1 Session"}); 
-linkMapping.push({linkId: "https://buy.stripe.com/14k9Cae2Da8Wf2E0kd", packageName: "All Inclusive - 3 Months - S&C - 10 Sessions"}); 
-linkMapping.push({linkId: "https://buy.stripe.com/aEU9Ca3nZ3KycUw0kc", packageName: "All Inclusive - 3 Months - S&C - 5 Sessions"}); 
-linkMapping.push({linkId: "https://buy.stripe.com/dR6aGebUv5SG6w88QK", packageName: "All Inclusive - 3 Months - S&C - Kobes - 1 Session"}); 
-linkMapping.push({linkId: "https://buy.stripe.com/4gw9Caf6H1Cqg6I7MI", packageName: "All Inclusive - 3 Months - S&C - Kobes - 10 Sessions"}); 
-linkMapping.push({linkId: "https://buy.stripe.com/bIY7u2e2Da8W6w81oj", packageName: "All Inclusive - 3 Months - S&C - Kobes - 5 Sessions"}); 
-linkMapping.push({linkId: "https://buy.stripe.com/8wM6pYcYz0ymbQs5Es", packageName: "All Inclusive - 3 Months - Western Boxing - 1 Session"}); 
-linkMapping.push({linkId: "https://buy.stripe.com/5kAeWuf6Ha8Wg6Ic2S", packageName: "All Inclusive - 3 Months - Western Boxing - 10 Sessions"}); 
-linkMapping.push({linkId: "https://buy.stripe.com/aEU29I3nZ0ym4o08QF", packageName: "All Inclusive - 3 Months - Western Boxing - 5 Sessions"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/9AQ7u2gaLgxkdYAeaH", packageName: "All Classes - 1 Month"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/6oEbKiaQrepcdYA3w4", packageName: "All Classes - 1 Month - Muay Thai - 1 Session"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/9AQdSq5w7bd05s4eaK", packageName: "All Classes - 1 Month - Muay Thai - 10 Sessions"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/eVa9Ca0bNa8W7Ac3w5", packageName: "All Classes - 1 Month - Muay Thai - 5 Sessions"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/6oE01AbUv6WKbQsc2G", packageName: "All Classes - 1 Month - S&C - 1 Session"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/3cs5lU3nZftg7AceaQ", packageName: "All Classes - 1 Month - S&C - 10 Sessions"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/6oEg0y0bN3Ky6w8giX", packageName: "All Classes - 1 Month - S&C - 5 Sessions"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/bIYaGegaL2Guf2Ec2J", packageName: "All Classes - 1 Month - S&C - Kobes - 1 Session"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/00g4hQ9Mnftg6w81o7", packageName: "All Classes - 1 Month - S&C - Kobes - 10 Sessions"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/aEU4hQ4s380OaMoeaS", packageName: "All Classes - 1 Month - S&C - Kobes - 5 Sessions"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/dR69CacYzepc4o02s3", packageName: "All Classes - 1 Month - Western Boxing - 1 Session"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/3csbKi2jVgxk1bO5Eh", packageName: "All Classes - 1 Month - Western Boxing - 10 Sessions"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/14keWu1fR4OCf2EeaM", packageName: "All Classes - 1 Month - Western Boxing - 5 Sessions"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/6oE8y66Ab3Ky7Acd6d", packageName: "All Classes - 1 Week"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/9AQ3dM6Abftg1bO1nw", packageName: "All Classes - 1 Week - Muay Thai - 1 Session"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/6oEeWu7Efbd09Ik2rC", packageName: "All Classes - 1 Week - Muay Thai - 10 Sessions"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/8wM4hQaQr80O3jW2rB", packageName: "All Classes - 1 Week - Muay Thai - 5 Sessions"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/3csg0y2jVgxk3jW5DS", packageName: "All Classes - 1 Week - S&C - 1 Session"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/4gwdSqaQra8WdYAfeu", packageName: "All Classes - 1 Week - S&C - 10 Sessions"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/5kAeWue2Dgxk6w81nD", packageName: "All Classes - 1 Week - S&C - 5 Sessions"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/fZe3dMaQr94SbQs4zR", packageName: "All Classes - 1 Week - S&C - Kobes - 1 Session"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/aEU9Ca8Ij1CqcUw2rL", packageName: "All Classes - 1 Week - S&C - Kobes - 10 Sessions"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/5kA5lU8Ijch46w84zS", packageName: "All Classes - 1 Week - S&C - Kobes - 5 Sessions"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/aEU15E4s3ch4bQs4zL", packageName: "All Classes - 1 Week - Western Boxing - 1 Session"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/bIYcOmbUv0ym2fS1nB", packageName: "All Classes - 1 Week - Western Boxing - 10 Sessions"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/dR6eWu8Ijgxk6w8aYa", packageName: "All Classes - 1 Week - Western Boxing - 5 Sessions"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/6oEcOmaQr5SG8Egeau", packageName: "All Classes - 2 Week"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/cN24hQ2jV1Cqf2E1nJ", packageName: "All Classes - 2 Week - Muay Thai - 1 Session"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/3cseWu1fR94S6w89Uh", packageName: "All Classes - 2 Week - Muay Thai - 10 Sessions"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/aEU15E0bN80O3jWeaw", packageName: "All Classes - 2 Week - Muay Thai - 5 Sessions"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/dR615E9Mngxk8EgfeF", packageName: "All Classes - 2 Week - S&C - 1 Session"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/4gwdSq0bN4OC9IkeaD", packageName: "All Classes - 2 Week - S&C - 10 Sessions"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/fZe7u27Efgxk3jW6Ia", packageName: "All Classes - 2 Week - S&C - 5 Sessions"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/7sIg0y7Efdl89Ik9Uo", packageName: "All Classes - 2 Week - S&C - Kobes - 1 Session"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/8wM01A5w7dl81bOd6C", packageName: "All Classes - 2 Week - S&C - Kobes - 10 Sessions"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/7sI4hQ4s380O9Ik8Ql", packageName: "All Classes - 2 Week - S&C - Kobes - 5 Sessions"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/3cseWu7Ef80OcUwfeC", packageName: "All Classes - 2 Week - Western Boxing - 1 Session"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/fZeg0y9Mn3Ky9Ik7Mc", packageName: "All Classes - 2 Week - Western Boxing - 10 Sessions"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/14k7u2bUvch407K6I7", packageName: "All Classes - 2 Week - Western Boxing - 5 Sessions"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/00g5lU5w75SGaMo8QA", packageName: "All Classes - 3 Months"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/cN2aGe8Ija8W9Ik2sd", packageName: "All Classes - 3 Months - Muay Thai - 1 Session"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/cN2cOm8Ij6WKaMo4An", packageName: "All Classes - 3 Months - Muay Thai - 10 Sessions"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/7sIaGe2jV6WKcUw9UG", packageName: "All Classes - 3 Months - Muay Thai - 5 Sessions"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/5kAbKi1fR2GucUwc2T", packageName: "All Classes - 3 Months - S&C - 1 Session"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/14k9Cae2Da8Wf2E0kd", packageName: "All Classes - 3 Months - S&C - 10 Sessions"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/aEU9Ca3nZ3KycUw0kc", packageName: "All Classes - 3 Months - S&C - 5 Sessions"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/dR6aGebUv5SG6w88QK", packageName: "All Classes - 3 Months - S&C - Kobes - 1 Session"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/4gw9Caf6H1Cqg6I7MI", packageName: "All Classes - 3 Months - S&C - Kobes - 10 Sessions"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/bIY7u2e2Da8W6w81oj", packageName: "All Classes - 3 Months - S&C - Kobes - 5 Sessions"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/8wM6pYcYz0ymbQs5Es", packageName: "All Classes - 3 Months - Western Boxing - 1 Session"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/5kAeWuf6Ha8Wg6Ic2S", packageName: "All Classes - 3 Months - Western Boxing - 10 Sessions"}); 
+linkMapping.push({linkId: "https://buy.stripe.com/aEU29I3nZ0ym4o08QF", packageName: "All Classes - 3 Months - Western Boxing - 5 Sessions"}); 
 linkMapping.push({linkId: "https://buy.stripe.com/dR615Ee2Dftg4o02r9", packageName: "Athlete Factory (all S&C classes) - 1 Month"}); 
 linkMapping.push({linkId: "https://buy.stripe.com/8wMbKibUv94ScUw7Lu", packageName: "Athlete Factory (all S&C classes) - 1 Month - Muay Thai - 1 Session"}); 
 linkMapping.push({linkId: "https://buy.stripe.com/00gaGe1fRftg2fS8PA", packageName: "Athlete Factory (all S&C classes) - 1 Month - Muay Thai - 10 Sessions"}); 
@@ -329,7 +329,7 @@ function trainingOnlyOptionsPriceCalc() {
 	let itemName = $('#Fitness-Packages-2 :selected').text();
 	itemName = itemName.replace(" *striking & s&c", "");
 	
-	if ($('#Fitness-Packages-2 :selected').text() == "All Inclusive *striking & s&c") {
+	if ($('#Fitness-Packages-2 :selected').text() == "All Classes *striking & s&c") {
 		if ($("#training-duration :selected").text() == "1 Week") {
 			durationPrice = 0;
 		} else if ($("#training-duration :selected").text() == "2 Week") {
